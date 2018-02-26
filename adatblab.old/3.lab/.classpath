@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Workdir másolata/jdbc/src"/>
+	<classpathentry kind="src" path="Workdir/jdbc/src"/>
+	<classpathentry kind="lib" path="Workdir másolata/jdbc/lib/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="Workdir másolata/jdbc/MySignedApplication.jar"/>
+	<classpathentry kind="lib" path="Workdir másolata/jdbc/unsigned.jar"/>
+	<classpathentry kind="lib" path="Workdir másolata/jdbc/web/MySignedApplication.jar"/>
+	<classpathentry kind="lib" path="Workdir másolata/jdbc/web/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="Workdir/jdbc/lib/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="Workdir/jdbc/MySignedApplication.jar"/>
+	<classpathentry kind="lib" path="Workdir/jdbc/unsigned.jar"/>
+	<classpathentry kind="lib" path="Workdir/jdbc/web/MySignedApplication.jar"/>
+	<classpathentry kind="lib" path="Workdir/jdbc/web/ojdbc7.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Workdir/jdbc/classes"/>
+</classpath>

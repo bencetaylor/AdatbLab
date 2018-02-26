@@ -1,0 +1,5 @@
+Különbség a HTTP metódusok között (pl PUT vs. POST, melyikben milyen SQL lekérdezést szoktak használni)
+Példa json/javascript/python fájl(részlet), formátuma helyes-e, ha nem, miért nem?
+AJAX hívással kapcsolatban kérdések
+Melyik python könyvtár segít url-t lekérdezni? (requests)
+HTTP kérés kiegészítése a hiányzó részekkel

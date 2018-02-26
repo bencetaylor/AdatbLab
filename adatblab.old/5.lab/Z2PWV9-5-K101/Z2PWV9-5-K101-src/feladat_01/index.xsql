@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rend.xsl"?>
+<!--Ez a fájl az 1. feladat megoldása, valamint a 3. feladathoz is felhasználható-->
+<!--Kapcsolódás az adatbázisszerverhez és a névtér-prefix beállítása-->
+<page connection="labor" xmlns:xsql="urn:oracle-xsql">
+    <!--A feladathoz használt lekérdezés-->
+    <!--A dátum formátumát is itt állítottam be-->
+    <xsql:query date-format="yyyy.MM.dd.">
+	SELECT 
+        *
+    FROM 
+        z2pwv9.eszkozok
+    </xsql:query>
+</page>

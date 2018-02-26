@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="lib" path="lib/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="MySignedApplication.jar"/>
+	<classpathentry kind="lib" path="unsigned.jar"/>
+	<classpathentry kind="lib" path="web/MySignedApplication.jar"/>
+	<classpathentry kind="lib" path="web/ojdbc7.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="lib" path="F:/Bence/adatblab/3.lab/Workdir/jdbc/lib/ojdbc7.jar"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

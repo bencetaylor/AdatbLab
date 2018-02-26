@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eszkozok</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <style>
+        table, th, td {
+    	    border: 1px solid black;
+    	    border-collapse: collapse;
+    	}
+        </style>
+    </head>
+    <body>
+        <script type = "text/javascript">
+            // Ez a valtozo meghivja a loadData fuggvenyt minden 300000 ms -ban, vagyis 5 percenkent
+            // Forras: http://www.w3schools.com/js/js_timing.asp
+    	    var refresh = window.setInterval(loadData, 300000);
+            // Az adatok szamanak tarolasara
+    	    var tableData = 0;
+            // Ebben a valtozoban lesz eltarolva a regi tabla,
+            // hogy ossze lehessen hasonlitani az ujja
+    	    var oldData;   	    
+            
+            // Ez a metodus a 6. feladat resze
+            // a parameterkent atadott "data"-t egy alert ablakba irja
+    	    function alerter(data) {
+                var eszkoz = data;
+                alert("Név: " + eszkoz.nev +
+                      "\nMárka: " + eszkoz.marka +
+                      "\nTípus: " + eszkoz.tipus +
+                      "\nNapi költség(huf): " + eszkoz.napi_ksg + " Ft" +
+                      "\nNapi költség(eur): " + eszkoz.napi_ksg_eur + " €" +
+                      "\nVásárlás dátuma: " + eszkoz.vasarlas);
+    	    }
+            
+            // Ez a metodus a 6. feladat resze
+            // ez felel a gomb-lenyomas lekezeleseert
+            function button_event_handler(evt) {
+                var button = evt.target;
+                var eszk_azon = button.name;
+                // A tobbi adatot az adott eszkozrol egy masik szolgaltatassal erhetjuk el
+                // ezt a szolgaltatast itt erjuk el, es ha sikeres, meghivodik az alerter()
+                $.ajax({
+                    url: "../eszkozok/" + eszk_azon + ".json",
+                    dataType: "json",
+                    success: alerter
+                });
+            }
+            
+            // Ez a metodus a 3. feladat resze
+            // a parameterkent kapott adatot egy tablazatba tolti, aminek az ID-je: "eszkozok"
+            function eszkozok_into_table(data) {
+                // Lekerjuk az adatokat
+                var eszkozok = data.eszkozok;
+                // Lekerjuk a tablat
+                var table = document.getElementById("eszkozok");
+                // Egy valtozoba elmenjuk, hogy mennyi adat volt eredetileg
+                var a = tableData;
+                // Ha van mar valami a tablazatban, azt toroljuk
+                for (var j = 0; j < tableData; j++) {
+                    table.deleteRow(+1);
+                }
+                // A tablazat feltoltese
+                for (tableData = 0; tableData < eszkozok.length; tableData++) {
+                    // A sor tulajdonsagait ebbe a valtozoba teszem
+                    var eszkoz = eszkozok[tableData];
+                    // Uj sort szurunk a tablazathoz, az aljara
+                    var row = table.insertRow(-1);
+                    // Beillesztjuk a sorba az attributumoknak megfelelo cellakat
+                    var cell_eszk_azon = row.insertCell(-1);
+                    var cell_nev = row.insertCell(-1);
+                    var cell_vasarlas = row.insertCell(-1);
+                    var cell_btn = row.insertCell(-1);
+                    // Beallitjuk a cellak adatait
+                    $(cell_eszk_azon).text(eszkoz.eszk_azon);
+                    $(cell_nev).text(eszkoz.nev);
+                    $(cell_vasarlas).text(eszkoz.vasarlas);
+                    // 6. feladat kiegeszites:
+                    // a sor vegere egy button-t rakunk, amelyre kattintva tovabbi reszletek 
+                    // jelennek meg
+                    var button = document.createElement("input");
+                    // Beallitjuk a gomb tulajdonsagait
+                    button.setAttribute("type", "button");
+                    button.setAttribute("value", "+");
+                    button.setAttribute("name", eszkoz.eszk_azon);
+                    // A feladat azt kerte, hogy az ID-je igy nezzen ki:
+                    button.setAttribute("ID", "eszkoz_reszlet_" + eszkoz.eszk_azon);
+                    // A megfelelo cellahoz hozzaadjuk a buttont
+                    cell_btn.appendChild(button);
+                    // Felvesszuk a gomb esemenykezelo fuggvenyet
+                    $(button).click(button_event_handler);   
+                }
+                // Osszehasonlitjuk a regi es az uj tablakat, hogy tortent-e modositas
+                compare(oldData, eszkozok);
+            }
+            
+            // Ez a metodus a 6. feladat resze
+            // osszehasonlitja a parameterkent kapott ket tablat
+            function compare(olddata, tabla) {
+                // Ha eloszor hivodik meg a fuggveny, akkor meg nem kell osszehasonlitas,
+                // hiszen biztosan kulonbozik a betoltott adat a semmitol
+                if (olddata == null) {
+                    oldData = tabla;
+                    return;
+                }
+                // Ciklusvaltozo
+                var j = 0;
+                // Ebben a ciklusban nezzuk meg a ket tabla elemeit, egyesevel osszehasonlitva
+                for (var i = 0; i < tabla.length && j < olddata.length; i++) {
+                    // A regi tabla jelenlegi eleme
+                    eszkoz1 = olddata[j];
+                    // Az uj tabla jelenlegi eleme
+                    eszkoz2 = tabla[i];
+                    // Ha a ket elem barmelyik attributumaban is kulonbozik, akkor valtozas tortent
+                    if (eszkoz1.eszk_azon != eszkoz2.eszk_azon || eszkoz1.nev != eszkoz2.nev || eszkoz1.vasarlas != eszkoz2.vasarlas) {
+                        // Specifikaljuk a valtozast
+                        // Ha a regi tabla jelenlegi eleme pont megegyezik az uj tabla kovetkezojevel =>
+                        // uj elem kerult a tablaba!
+                        if (i+1 < tabla.length && eszkoz1.eszk_azon == tabla[i+1].eszk_azon) {
+                            // Az uj elem az uj tabla jelenlegi eleme
+                            alert("Uj eszkoz az adatbazisban: " + eszkoz2.eszk_azon);
+                            i++;
+                        }
+                        // Ha a regi tabla kovetkezo eleme megegyezik az uj tabla jelenlegi elemevel =>
+                        // egy elemet toroltek a tablabol!
+                        else if (j+1 < olddata.length && olddata[j+1].eszk_azon == eszkoz2.eszk_azon) {
+                            // Ez az elem a regi tabla jelenlegi eleme
+                            alert("Ezt az eszkozt toroltek: " + eszkoz1.eszk_azon);
+                            j++;
+                        }
+                        // Ha megegyezik az eszk_azon, vagyis a ket elem megegyezik
+                        else if (eszkoz1.eszk_azon == eszkoz2.eszk_azon) {
+                            // Megnezzuk a nevukben/vasarlasi datumukban kulonboznek-e!
+                            if (eszkoz1.nev != eszkoz2.nev) alert("" + eszkoz1.eszk_azon + " neve " + eszkoz1.nev + "-rol " + eszkoz2.nev + "-re valtozott");
+                            else if (eszkoz1.vasarlas != eszkoz2.vasarlas) alert("" + eszkoz1.eszk_azon + " vasarlasi ideje " + eszkoz1.vasarlas + "-rol " + eszkoz2.vasarlas + "-ra valtozott");
+                        }
+                    }
+                    j++;
+                }
+                // A vizsgalat vegen mar felulirhatjuk a regi tablat
+                oldData = tabla;
+            }
+            
+            // Ez a metodus a 3. feladathoz keszult
+            // betolti az eszkozok tabla elemeit
+            function loadData() {
+                $.ajax({
+                    url: "../eszkozok.json",
+                    dataType: "json",
+                    success: eszkozok_into_table
+                });
+            }
+            
+            // Az oldal betoltesekor a loadData metodus hivodjon meg
+            $(loadData);
+	   
+	    
+	</script>
+	<table id="eszkozok", style="width:100%">
+	    <tr>
+		<th>Eszköz-azonosító</th>
+		<th>Név</th>
+		<th>Vásárlás</th>
+		<th>Részletesebben</th>
+	    </tr>
+	</table>
+    </body>
+</html>

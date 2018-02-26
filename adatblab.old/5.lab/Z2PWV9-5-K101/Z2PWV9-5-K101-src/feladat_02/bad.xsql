@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rend.xsl"?>
+<!--Ez a fájl az 2. feladat megoldása-->
+<!--Kapcsolódás az adatbázisszerverhez és a névtér-prefix beállítása-->
+<page connection="labor" xmlns:xsql="urn:oracle-xsql">
+    <!--A helytelenül megadott lekérdezés-->
+    <!--A hiba: FROM helyett FOM van írva-->
+    <xsql:query date-format="yyyy.MM.dd.">
+	SELECT * FOM z2pwv9.eszkozok
+    </xsql:query>
+</page>

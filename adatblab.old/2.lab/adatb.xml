@@ -1,0 +1,159 @@
+set echo off
+set verify off
+alter session set NLS_DATE_FORMAT='YYYY-MM-DD';
+set serveroutput on
+set feedback off
+DROP TABLE orders;
+prompt <tasks>
+
+prompt <task n="1.1">
+prompt <![CDATA[
+ALTER TABLE vehicles
+ADD amort NUMBER(3) DEFAULT 100 NOT NULL;
+prompt ]]>
+prompt </task>
+
+prompt <task n="1.2">
+prompt <![CDATA[
+ALTER TABLE orders
+DROP COLUMN comment_text;
+
+CREATE TABLE comments (
+  comment_id NUMBER(6) NOT NULL,
+  order_id NVARCHAR2(11) NOT NULL,
+  comment_text NVARCHAR2(500),
+  importance NUMBER(1) NOT NULL);
+
+ALTER TABLE comments
+ADD CONSTRAINT orders_PK
+PRIMARY KEY (comment_id);
+
+ALTER TABLE comments
+ADD CONSTRAINT orders_FK
+FOREIGN KEY (order_id)
+REFERENCES orders(order_id);
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.1">
+prompt <![CDATA[
+SELECT * 
+FROM orders;
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.2">
+prompt <![CDATA[
+SELECT *
+FROM vehicles
+ORDER BY numberplate;
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.3">
+prompt <![CDATA[
+select numberplate, decode (maintenance_date, NULL, 'SOHA', MAINTENANCE_DATE) as maintenance_date
+from vehicles;
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.4">
+prompt <![CDATA[
+SELECT shipment_id
+From SHIPMENTS
+where (ARRIVAL_DATE - DEPARTURE_DATE) > 2
+order by DEPARTURE_DATE;
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.5">
+prompt <![CDATA[
+select order_id
+from ORDERS
+where TO_CHAR(DEADLINE_DATE,'DY','nls_date_language=english') in ('SAT', 'SUN')
+order by order_id;
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.6">
+prompt <![CDATA[
+select orders.ORDER_ID, (to_date(shipments.arrival_date, 'YYYY.MM.DD.')-to_date(orders.DEADLINE_DATE, 'YYYY.MM.DD.')) as days
+FROM orders
+INNER JOIN shipments
+ON orders.ORDER_ID = shipments.order_id
+where (shipments.state = 'D') and (orders.deadline_date < shipments.arrival_date);
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.7">
+prompt <![CDATA[
+select vehicles.numberplate, SUM(24 * (to_date(arrival_date, 'YYYY.MM.DD.HH24.MI')-to_date(departure_date, 'YYYY.MM.DD.HH24.MI'))) as hours
+FROM vehicles
+INNER JOIN shipments
+ON vehicles.vehicle_id = shipments.vehicle_id
+GROUP BY vehicles.numberplate
+ORDER BY hours;
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.8">
+prompt <![CDATA[
+select MAX(ve.purchase_date) as oldest, MIN(ve.purchase_date) as newest
+from shipments sh
+inner join orders o on o.ORDER_ID = sh.ORDER_ID
+inner join VEHICLES ve on ve.VEHICLE_ID = sh.VEHICLE_ID
+where o.ORIGIN LIKE '%(HU)' or o.DESTINATION LIKE '%(HU)';
+prompt ]]>
+prompt </task>
+
+prompt <task n="3.1">
+prompt <![CDATA[
+select order_id
+from ORDERS
+where deadline_date = 
+(select  MIN(DEADLINE_DATE)
+from orders
+where destination LIKE '%(HU)%');
+prompt ]]>
+prompt </task>
+
+prompt <task n="3.2">
+prompt <![CDATA[
+select vehicle_id
+from
+(
+select vehicle_id, count(shipment_id) as c
+from shipments
+group by vehicle_id
+order by c desc
+)
+where ROWNUM = 1;
+prompt ]]>
+prompt </task>
+
+prompt <task n="3.3">
+prompt <![CDATA[
+
+prompt ]]>
+prompt </task>
+
+prompt <task n="3.4">
+prompt <![CDATA[
+
+prompt ]]>
+prompt </task>
+set feedback on
+
+prompt <task n="4.1">
+prompt <![CDATA[
+
+prompt ]]>
+prompt </task>
+set feedback off
+
+prompt <task n="5.1">
+prompt <![CDATA[
+
+prompt ]]>
+prompt </task>
+prompt </tasks>

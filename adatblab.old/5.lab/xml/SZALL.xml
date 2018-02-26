@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<szall element-type="dataset">
+  <orders element-type="recordset">
+    <record element-type="record" order_id="2017/000001">
+      <description is-null="False">bútor</description>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <quantity is-null="False">10000</quantity>
+      <origin is-null="False">Berlin (DE)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <order_date is-null="False" date="2017-01-02" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-05-10" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000002">
+      <description is-null="False">építőanyag</description>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <quantity is-null="False">8000</quantity>
+      <origin is-null="False">Kolozsvár (RO)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <order_date is-null="False" date="2017-01-04" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-04-11" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000003">
+      <description is-null="False">építőanyag</description>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Milánó (IT)</origin>
+      <destination is-null="False">Szeged (HU)</destination>
+      <order_date is-null="False" date="2017-01-14" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-03-21" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000004">
+      <description is-null="False">élelmiszer &lt;tartós&gt;</description>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <quantity is-null="False">15000</quantity>
+      <origin is-null="False">Belgrád (RS)</origin>
+      <destination is-null="False">Pozsony (SK)</destination>
+      <order_date is-null="False" date="2017-01-23" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-04-12" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000005">
+      <description is-null="False">bútoralapanyag</description>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <quantity is-null="False">30000</quantity>
+      <origin is-null="False">Varsó (PL)</origin>
+      <destination is-null="False">Debrecen (HU)</destination>
+      <order_date is-null="False" date="2017-01-31" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-02-22" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000006">
+      <description is-null="False">élelmiszer &lt;ital&gt;</description>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Prága (CZ)</origin>
+      <destination is-null="False">Zágráb (HR)</destination>
+      <order_date is-null="False" date="2017-01-31" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-05-01" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000011">
+      <description is-null="False">műszaki cikk</description>
+      <vehicle_type is-null="False">C</vehicle_type>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Bécs (AT)</origin>
+      <destination is-null="False">Kassa (SK)</destination>
+      <order_date is-null="False" date="2017-01-05" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-02-10" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000012">
+      <description is-null="False">papíráru, &lt;nyers&gt;</description>
+      <vehicle_type is-null="False">C</vehicle_type>
+      <quantity is-null="False">34000</quantity>
+      <origin is-null="False">Prága (CZ)</origin>
+      <destination is-null="False">Belgrád (RS)</destination>
+      <order_date is-null="False" date="2017-01-21" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-03-08" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000013">
+      <description is-null="False">vegyi áru (festék&amp;higító)</description>
+      <vehicle_type is-null="False">C</vehicle_type>
+      <quantity is-null="False">12000</quantity>
+      <origin is-null="False">Budapest (HU)</origin>
+      <destination is-null="False">München (DE)</destination>
+      <order_date is-null="False" date="2017-01-25" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-04-10" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000021">
+      <description is-null="False">üzemanyag</description>
+      <vehicle_type is-null="False">T</vehicle_type>
+      <quantity is-null="False">16000</quantity>
+      <origin is-null="False">Zágráb (HR)</origin>
+      <destination is-null="False">Varsó (PL)</destination>
+      <order_date is-null="False" date="2017-01-15" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-03-16" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000022">
+      <description is-null="False">üzemanyag</description>
+      <vehicle_type is-null="False">T</vehicle_type>
+      <quantity is-null="False">42000</quantity>
+      <origin is-null="False">Kolozsvár (RO)</origin>
+      <destination is-null="False">Milánó (IT)</destination>
+      <order_date is-null="False" date="2017-01-18" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-03-12" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000031">
+      <description is-null="False">baromfi</description>
+      <vehicle_type is-null="False">L</vehicle_type>
+      <quantity is-null="False">16000</quantity>
+      <origin is-null="False">Krakkó (PL)</origin>
+      <destination is-null="False">Szeged (HU)</destination>
+      <order_date is-null="False" date="2017-02-15" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-04-12" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000032">
+      <description is-null="False">versenyló</description>
+      <vehicle_type is-null="False">L</vehicle_type>
+      <quantity is-null="False">4000</quantity>
+      <origin is-null="False">Debrecen (HU)</origin>
+      <destination is-null="False">Milánó (IT)</destination>
+      <order_date is-null="False" date="2017-02-16" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-02-28" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000033">
+      <description is-null="False">sertés</description>
+      <vehicle_type is-null="False">L</vehicle_type>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Szeged (HU)</origin>
+      <destination is-null="False">Berlin (DE)</destination>
+      <order_date is-null="False" date="2017-02-28" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-04-13" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000041">
+      <description is-null="False">használt autó</description>
+      <vehicle_type is-null="False">A</vehicle_type>
+      <quantity is-null="False">10</quantity>
+      <origin is-null="False">München (DE)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <order_date is-null="False" date="2017-01-25" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-04-24" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+    <record element-type="record" order_id="2017/000042">
+      <description is-null="False">hatóságilag lefoglalt járművek</description>
+      <vehicle_type is-null="False">A</vehicle_type>
+      <quantity is-null="False">15</quantity>
+      <origin is-null="False">Belgrád (RS)</origin>
+      <destination is-null="False">Berlin (DE)</destination>
+      <order_date is-null="False" date="2017-01-28" time="00:00:00"/>
+      <deadline_date is-null="False" date="2017-03-12" time="12:00:00"/>
+      <comment_text is-null="True"/>
+    </record>
+  </orders>
+  <shipments element-type="recordset">
+    <record element-type="record" shipment_id="10">
+      <order_id is-null="False">2017/000001</order_id>
+      <vehicle_id is-null="False">0</vehicle_id>
+      <quantity is-null="False">10000</quantity>
+      <origin is-null="False">Berlin (DE)</origin>
+      <destination is-null="False">Bécs (AT)</destination>
+      <departure_date is-null="False" date="2017-01-05" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-06" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="11">
+      <order_id is-null="False">2017/000001</order_id>
+      <vehicle_id is-null="False">0</vehicle_id>
+      <quantity is-null="False">10000</quantity>
+      <origin is-null="False">Bécs (AT)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-01-06" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-07" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="20">
+      <order_id is-null="False">2017/000002</order_id>
+      <vehicle_id is-null="False">0</vehicle_id>
+      <quantity is-null="False">8000</quantity>
+      <origin is-null="False">Kolozsvár (RO)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-01-08" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-09" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="30">
+      <order_id is-null="False">2017/000003</order_id>
+      <vehicle_id is-null="False">2</vehicle_id>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Milánó (IT)</origin>
+      <destination is-null="False">Zágráb (HR)</destination>
+      <departure_date is-null="False" date="2017-01-14" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-15" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="31">
+      <order_id is-null="False">2017/000003</order_id>
+      <vehicle_id is-null="False">2</vehicle_id>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Zágráb (HR)</origin>
+      <destination is-null="False">Szeged (HU)</destination>
+      <departure_date is-null="False" date="2017-01-15" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-16" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="40">
+      <order_id is-null="False">2017/000004</order_id>
+      <vehicle_id is-null="False">1</vehicle_id>
+      <quantity is-null="False">15000</quantity>
+      <origin is-null="False">Belgrád (RS)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-02-10" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-11" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="41">
+      <order_id is-null="False">2017/000004</order_id>
+      <vehicle_id is-null="False">1</vehicle_id>
+      <quantity is-null="False">15000</quantity>
+      <origin is-null="False">Belgrád (RS)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-04-11" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-04-12" time="08:00:00"/>
+      <state is-null="False">D</state>
+    </record>
+    <record element-type="record" shipment_id="50">
+      <order_id is-null="False">2017/000005</order_id>
+      <vehicle_id is-null="False">0</vehicle_id>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Varsó (PL)</origin>
+      <destination is-null="False">Szeged (HU)</destination>
+      <departure_date is-null="False" date="2017-02-03" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-04" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="51">
+      <order_id is-null="False">2017/000005</order_id>
+      <vehicle_id is-null="False">0</vehicle_id>
+      <quantity is-null="False">10000</quantity>
+      <origin is-null="False">Varsó (PL)</origin>
+      <destination is-null="False">Szeged (HU)</destination>
+      <departure_date is-null="False" date="2017-02-05" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-06" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="52">
+      <order_id is-null="False">2017/000005</order_id>
+      <vehicle_id is-null="False">0</vehicle_id>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Szeged (HU)</origin>
+      <destination is-null="False">Debrecen (HU)</destination>
+      <departure_date is-null="False" date="2017-02-20" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-21" time="08:00:00"/>
+      <state is-null="False">D</state>
+    </record>
+    <record element-type="record" shipment_id="53">
+      <order_id is-null="False">2017/000005</order_id>
+      <vehicle_id is-null="False">0</vehicle_id>
+      <quantity is-null="False">10000</quantity>
+      <origin is-null="False">Szeged (HU)</origin>
+      <destination is-null="False">Debrecen (HU)</destination>
+      <departure_date is-null="False" date="2017-02-21" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-22" time="08:00:00"/>
+      <state is-null="False">D</state>
+    </record>
+    <record element-type="record" shipment_id="60">
+      <order_id is-null="False">2017/000006</order_id>
+      <vehicle_id is-null="False">2</vehicle_id>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Prága (CZ)</origin>
+      <destination is-null="False">Zágráb (HR)</destination>
+      <departure_date is-null="False" date="2017-03-31" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-04-30" time="08:00:00"/>
+      <state is-null="False">D</state>
+    </record>
+    <record element-type="record" shipment_id="110">
+      <order_id is-null="False">2017/000011</order_id>
+      <vehicle_id is-null="False">10</vehicle_id>
+      <quantity is-null="False">20000</quantity>
+      <origin is-null="False">Bécs (AT)</origin>
+      <destination is-null="False">Kassa (SK)</destination>
+      <departure_date is-null="False" date="2017-01-06" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-08" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="120">
+      <order_id is-null="False">2017/000012</order_id>
+      <vehicle_id is-null="False">10</vehicle_id>
+      <quantity is-null="False">34000</quantity>
+      <origin is-null="False">Prága (CZ)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-01-22" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-23" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="121">
+      <order_id is-null="False">2017/000012</order_id>
+      <vehicle_id is-null="False">10</vehicle_id>
+      <quantity is-null="False">34000</quantity>
+      <origin is-null="False">Budapest (HU)</origin>
+      <destination is-null="False">Belgrád (RS)</destination>
+      <departure_date is-null="False" date="2017-03-07" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-03-08" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="130">
+      <order_id is-null="False">2017/000013</order_id>
+      <vehicle_id is-null="False">10</vehicle_id>
+      <quantity is-null="False">12000</quantity>
+      <origin is-null="False">Budapest (HU)</origin>
+      <destination is-null="False">München (DE)</destination>
+      <departure_date is-null="False" date="2017-01-26" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-27" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="210">
+      <order_id is-null="False">2017/000021</order_id>
+      <vehicle_id is-null="False">21</vehicle_id>
+      <quantity is-null="False">16000</quantity>
+      <origin is-null="False">Zágráb (HR)</origin>
+      <destination is-null="False">Varsó (PL)</destination>
+      <departure_date is-null="False" date="2017-03-14" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-03-16" time="08:00:00"/>
+      <state is-null="False">D</state>
+    </record>
+    <record element-type="record" shipment_id="220">
+      <order_id is-null="False">2017/000022</order_id>
+      <vehicle_id is-null="False">20</vehicle_id>
+      <quantity is-null="False">12000</quantity>
+      <origin is-null="False">Kolozsvár (RO)</origin>
+      <destination is-null="False">Milánó (IT)</destination>
+      <departure_date is-null="False" date="2017-01-19" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-22" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="221">
+      <order_id is-null="False">2017/000022</order_id>
+      <vehicle_id is-null="False">20</vehicle_id>
+      <quantity is-null="False">12000</quantity>
+      <origin is-null="False">Kolozsvár (RO)</origin>
+      <destination is-null="False">Milánó (IT)</destination>
+      <departure_date is-null="False" date="2017-01-24" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-01-26" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="222">
+      <order_id is-null="False">2017/000022</order_id>
+      <vehicle_id is-null="False">20</vehicle_id>
+      <quantity is-null="False">12000</quantity>
+      <origin is-null="False">Kolozsvár (RO)</origin>
+      <destination is-null="False">Milánó (IT)</destination>
+      <departure_date is-null="False" date="2017-03-05" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-03-07" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="223">
+      <order_id is-null="False">2017/000022</order_id>
+      <vehicle_id is-null="False">20</vehicle_id>
+      <quantity is-null="False">6000</quantity>
+      <origin is-null="False">Kolozsvár (RO)</origin>
+      <destination is-null="False">Milánó (IT)</destination>
+      <departure_date is-null="False" date="2017-03-10" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-03-12" time="08:00:00"/>
+      <state is-null="False">D</state>
+    </record>
+    <record element-type="record" shipment_id="310">
+      <order_id is-null="False">2017/000031</order_id>
+      <vehicle_id is-null="False">30</vehicle_id>
+      <quantity is-null="False">16000</quantity>
+      <origin is-null="False">Krakkó (PL)</origin>
+      <destination is-null="False">Szeged (HU)</destination>
+      <departure_date is-null="False" date="2017-04-10" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-04-12" time="08:00:00"/>
+      <state is-null="False">D</state>
+    </record>
+    <record element-type="record" shipment_id="320">
+      <order_id is-null="False">2017/000032</order_id>
+      <vehicle_id is-null="False">30</vehicle_id>
+      <quantity is-null="False">30000</quantity>
+      <origin is-null="False">Szeged (HU)</origin>
+      <destination is-null="False">Berlin (DE)</destination>
+      <departure_date is-null="False" date="2017-04-11" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-04-13" time="08:00:00"/>
+      <state is-null="False">D</state>
+    </record>
+    <record element-type="record" shipment_id="410">
+      <order_id is-null="False">2017/000041</order_id>
+      <vehicle_id is-null="False">40</vehicle_id>
+      <quantity is-null="False">8</quantity>
+      <origin is-null="False">München (DE)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-02-22" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-26" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="411">
+      <order_id is-null="False">2017/000041</order_id>
+      <vehicle_id is-null="False">40</vehicle_id>
+      <quantity is-null="False">2</quantity>
+      <origin is-null="False">München (DE)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-02-22" time="08:00:00"/>
+      <arrival_date is-null="False" date="2017-02-26" time="16:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="420">
+      <order_id is-null="False">2017/000042</order_id>
+      <vehicle_id is-null="False">40</vehicle_id>
+      <quantity is-null="False">8</quantity>
+      <origin is-null="False">Belgrád (RS)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-02-04" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-05" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="421">
+      <order_id is-null="False">2017/000042</order_id>
+      <vehicle_id is-null="False">40</vehicle_id>
+      <quantity is-null="False">7</quantity>
+      <origin is-null="False">Belgrád (RS)</origin>
+      <destination is-null="False">Budapest (HU)</destination>
+      <departure_date is-null="False" date="2017-02-07" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-08" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="422">
+      <order_id is-null="False">2017/000042</order_id>
+      <vehicle_id is-null="False">41</vehicle_id>
+      <quantity is-null="False">8</quantity>
+      <origin is-null="False">Budapest (HU)</origin>
+      <destination is-null="False">Berlin (DE)</destination>
+      <departure_date is-null="False" date="2017-02-06" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-08" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+    <record element-type="record" shipment_id="423">
+      <order_id is-null="False">2017/000042</order_id>
+      <vehicle_id is-null="False">41</vehicle_id>
+      <quantity is-null="False">7</quantity>
+      <origin is-null="False">Budapest (HU)</origin>
+      <destination is-null="False">Berlin (DE)</destination>
+      <departure_date is-null="False" date="2017-02-12" time="16:00:00"/>
+      <arrival_date is-null="False" date="2017-02-14" time="08:00:00"/>
+      <state is-null="False">R</state>
+    </record>
+  </shipments>
+  <vehicles element-type="recordset">
+    <record element-type="record" vehicle_id="0">
+      <numberplate is-null="False">BEO860</numberplate>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <purchase_date is-null="False" date="2000-07-01" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2005-09-07" time="00:00:00"/>
+      <capacity is-null="False">10000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="1">
+      <numberplate is-null="False">FKQ010</numberplate>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <purchase_date is-null="False" date="2001-07-16" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2007-01-29" time="00:00:00"/>
+      <capacity is-null="False">12000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="2">
+      <numberplate is-null="False">TWQ766</numberplate>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <purchase_date is-null="False" date="2002-08-06" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2010-02-02" time="00:00:00"/>
+      <capacity is-null="False">20000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="3">
+      <numberplate is-null="False">DZD729</numberplate>
+      <vehicle_type is-null="False">D</vehicle_type>
+      <purchase_date is-null="False" date="2013-01-31" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2015-01-30" time="00:00:00"/>
+      <capacity is-null="False">16000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="10">
+      <numberplate is-null="False">JHE848</numberplate>
+      <vehicle_type is-null="False">C</vehicle_type>
+      <purchase_date is-null="False" date="2013-10-31" time="00:00:00"/>
+      <maintenance_date is-null="True"/>
+      <capacity is-null="False">44000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="11">
+      <numberplate is-null="False">ECH117</numberplate>
+      <vehicle_type is-null="False">C</vehicle_type>
+      <purchase_date is-null="False" date="2006-06-11" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2009-09-06" time="00:00:00"/>
+      <capacity is-null="False">48000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="12">
+      <numberplate is-null="False">QKQ609</numberplate>
+      <vehicle_type is-null="False">C</vehicle_type>
+      <purchase_date is-null="False" date="2008-12-13" time="00:00:00"/>
+      <maintenance_date is-null="True"/>
+      <capacity is-null="False">64000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="13">
+      <numberplate is-null="False">ZMW794</numberplate>
+      <vehicle_type is-null="False">C</vehicle_type>
+      <purchase_date is-null="False" date="2008-10-21" time="00:00:00"/>
+      <maintenance_date is-null="True"/>
+      <capacity is-null="False">36000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="14">
+      <numberplate is-null="False">NCZ551</numberplate>
+      <vehicle_type is-null="False">C</vehicle_type>
+      <purchase_date is-null="False" date="2007-07-08" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2008-12-12" time="00:00:00"/>
+      <capacity is-null="False">48000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="20">
+      <numberplate is-null="False">AVQ374</numberplate>
+      <vehicle_type is-null="False">T</vehicle_type>
+      <purchase_date is-null="False" date="2007-09-26" time="00:00:00"/>
+      <maintenance_date is-null="True"/>
+      <capacity is-null="False">12000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="21">
+      <numberplate is-null="False">FAR836</numberplate>
+      <vehicle_type is-null="False">T</vehicle_type>
+      <purchase_date is-null="False" date="2006-06-12" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2009-08-13" time="00:00:00"/>
+      <capacity is-null="False">16000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="30">
+      <numberplate is-null="False">AJJ538</numberplate>
+      <vehicle_type is-null="False">L</vehicle_type>
+      <purchase_date is-null="False" date="2007-05-19" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2007-07-05" time="00:00:00"/>
+      <capacity is-null="False">24000</capacity>
+    </record>
+    <record element-type="record" vehicle_id="40">
+      <numberplate is-null="False">XTZ033</numberplate>
+      <vehicle_type is-null="False">A</vehicle_type>
+      <purchase_date is-null="False" date="2000-04-07" time="00:00:00"/>
+      <maintenance_date is-null="False" date="2007-06-03" time="00:00:00"/>
+      <capacity is-null="False">8</capacity>
+    </record>
+    <record element-type="record" vehicle_id="41">
+      <numberplate is-null="False">FFE749</numberplate>
+      <vehicle_type is-null="False">A</vehicle_type>
+      <purchase_date is-null="False" date="2013-10-31" time="00:00:00"/>
+      <maintenance_date is-null="True"/>
+      <capacity is-null="False">10</capacity>
+    </record>
+  </vehicles>
+</szall>

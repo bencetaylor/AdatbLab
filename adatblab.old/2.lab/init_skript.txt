@@ -1,0 +1,8 @@
+select vehicle_id
+from
+(
+select vehicle_id, count(shipment_id) as total
+from shipments
+group by vehicle_id
+)
+where total = 7;

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ship element-type="dataset">
+  <ships element-type="recordset">
+    <record element-type="record" ship_id="209">
+      <name is-null="False">Rabonbán II.</name>
+      <built is-null="False" date="1936-01-01" />
+      <status is-null="False">active</status>
+      <type is-null="False">sailing boat</type>
+    </record>
+    <record element-type="record" ship_id="150">
+      <name is-null="False">Tamangó</name>
+      <built is-null="False" date="1964-01-01" />
+      <status is-null="False">active</status>
+      <type is-null="False">sailing boat</type>
+    </record>
+    <record element-type="record" ship_id="424">
+      <name is-null="False">Winner</name>
+      <built is-null="False" date="1997-02-02" />
+      <status is-null="False">active</status>
+      <type is-null="False">battleship</type>
+    </record>
+  </ships>
+</ship>

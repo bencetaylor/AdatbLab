@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Orders</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <style>
+        table, th, td {
+    	    border: 1px solid black;
+    	    border-collapse: collapse;
+    	}
+        </style>
+    </head>
+    <body>
+        <script type = "text/javascript">
+            // 5 masodpercenkent (5000ms) frissitjuk az oldal adatait
+            var refresh = window.setInterval(loadData, 5000);
+            
+            // Itt taroljuk a regi tablat,
+            // hogy ossze lehessen hasonlitani az ujjal.
+    	    var oldData;
+            
+            // Az adatok szamanak tarolasara
+    	    var tableData = 0;
+            
+            // 3. feladat
+            // A parameterkent kapott adatot a tablazatba toltese.
+            function orders_into_table(data) {
+            
+                // Lekerjuk az adatokat
+                var orders = data.orders;
+                
+                // Lekerjuk a tablat
+                var table = document.getElementById("orders");
+                
+                // Eddigi sorok szama
+                var a = tableData;
+                
+                // Kiuritjuk a tablazatot, ha esetleg lett volna benne adat.
+                for (var j = 0; j < tableData; j++) {
+                    table.deleteRow(+1);
+                }
+                // A tablazat feltoltese
+                for (tableData = 0; tableData < orders.length; tableData++) {
+                
+                    // A sor tulajdonsagai
+                    var order = orders[tableData];
+                    
+                    // Uj sor a tablazat aljara
+                    var row = table.insertRow(-1);
+                    
+                    // Beillesztjuk a sorba az attributumoknak megfelelo cellakat
+                    var cell_order_id = row.insertCell(-1);
+                    var cell_description = row.insertCell(-1);
+                    var cell_quantity = row.insertCell(-1);
+                    var cell_deadline_date = row.insertCell(-1);
+                    var cell_btn = row.insertCell(-1);
+                    
+                    // Beallitjuk a cellak adatait
+                    $(cell_order_id).text(order.order_id);
+                    $(cell_description).text(order.description);
+                    $(cell_quantity).text(order.quantity);
+                    $(cell_deadline_date).text(order.deadline_date);
+                    
+                    
+                // 6. feladat kiegeszites:
+                    // A sor vegere egy button-t rakunk, amelyre kattintva tovabbi reszletek 
+                    // jelennek meg
+                    var button = document.createElement("input");
+                    
+                    // Beallitjuk a gomb tulajdonsagait
+                    button.setAttribute("type", "button");
+                    button.setAttribute("value", ">");
+                    button.setAttribute("name", order.order_id);
+                    
+                    // A gomb ID-janak beallitasa a feladat szerint
+                    button.setAttribute("ID", "order_details" + order.order_id);
+                    
+                    // A megfelelo cellahoz hozzaadjuk a buttont
+                    cell_btn.appendChild(button);
+                    
+                    // Felvesszuk a gomb esemenykezelo fuggvenyet
+                    $(button).click(button_event_handler);
+                }
+                
+                // Osszehasonlitjuk a regi es az uj tablakat, hogy tortent-e modositas
+                compare(oldData, orders);
+            }
+            
+            // 6. feladat
+            // A parameterkent kapott adatok megjelenitese alert ablakban.
+    	    function alerter(data) {
+                var order = data;
+                alert("Description: " + order.description +
+                      "\nVehicle Type: " + order.vehicle_type +
+                      "\nQuantity: " + order.quantity +
+                      "\nOrigin: " + order.origin +
+                      "\nDestination: " + order.destination +
+                      "\nOrder Date: " + order.order_date +
+                      "\nDeadline Date: " + order.deadline_date +
+                      "\nComments: " + order.comment_text +
+                      "\nOrigin country currency: " + order.origin_currency +
+                      "\nDestination country currency: " + order.destination_currency);
+    	    }
+            
+            // 6. feladat
+            // A gombok esemenykezeloje.
+            function button_event_handler(evt) {
+                var button = evt.target;
+                var order_id = button.name;
+                // A tobbi adatot a gombrol a lentebb lathato modon erhetjuk el. Ha ez sikeres
+                // meghivjuk az alerter()-t
+                $.ajax({
+                    url: "../orders/" + order_id + ".json",
+                    dataType: "json",
+                    success: alerter
+                });
+            }
+            
+            // 6. feladat
+            // Tablak osszehasonlitasa
+            function compare(olddata, tabla) {
+                // Ha eloszor fot le a fuggveny, az oldData meg nem letezik,
+                // tehat a tablazat biztosan kulonbozni fog a semmitol. Ekkor nem kell hogy lefusson.
+                if (olddata == null) {
+                    oldData = tabla;
+                    return;
+                }
+                
+                var j = 0;
+                // Egyesevel osszehasonlitjuk a ket tabla elemeit.
+                for (var i = 0; i < tabla.length && j < olddata.length; i++) {
+                    // A regi tabla jelenlegi eleme
+                    order1 = olddata[j];
+                    // Az uj tabla jelenlegi eleme
+                    order2 = tabla[i];
+                    // Ha a ket elem barmelyik attributumaban is kulonbozik, akkor valtozas tortent
+                    if (order1.order_id != order2.order_id || order1.description != order2.description || order1.quantity != order2.quantity || order1.deadline_date != order2.deadline_date) {
+                        // Specifikaljuk a valtozast
+                        // Ha a regi tabla jelenlegi eleme pont megegyezik az uj tabla kovetkezojevel,
+                        // akkor uj elem kerult a tablaba!
+                        if (i+1 < tabla.length && order1.order_id == tabla[i+1].order_id) {
+                            // Az uj elem az uj tabla jelenlegi eleme
+                            alert("Uj megrendeles az adatbazisban: " + order2.order_id);
+                            i++;
+                        }
+                        // Ha a regi tabla kovetkezo eleme megegyezik az uj tabla jelenlegi elemevel, 
+                        // akkor egy elemet toroltek a tablabol!
+                        else if (j+1 < olddata.length && olddata[j+1].order_id == order2.order_id) {
+                            // Ez az elem a regi tabla jelenlegi eleme
+                            alert("Ezt a megrendelest toroltek: " + order1.order_id);
+                            j++;
+                        }
+                        // Ha megegyezik az order_id, vagyis a ket elem megegyezik
+                        else if (order1.order_id == order2.order_id) {
+                            // Megnezzuk, hogy a leirasban, mennyisegben vagy lejarati datumban kulonboznek-e!
+                            if (order1.description != order2.description)
+                                alert("" + order1.order_id + " Megnevezese " + order1.description + "-rol " + order2.description + "-re valtozott");
+                            else if 
+                                (order1.quantity != order2.quantity) alert("" + order1.order_id + " Mennyisege " + order1.quantity + "-rol " + order2.quantity + "-re valtozott");
+                            else if 
+                                (order1.deadline_date != order2.deadline_date) alert("" + order1.order_id + " lejarati datuma " + order1.deadline_date + "-rol " + order2.deadline_date + "-ra valtozott");
+                        }
+                    }
+                    j++;
+                }
+                // A vizsgalat vegen a jelenlegi tabla lesz az oldData
+                oldData = tabla;
+            }
+            
+            // 3. feladathoz
+            // betoltjuk az orders tabla elemeit
+            function loadData() {
+                $.ajax({
+                    url: "../orders.json",
+                    dataType: "json",
+                    success: orders_into_table
+                });
+            }
+            
+            // Az oldal betoltesekor a loadData hivodik meg
+            $(loadData);
+	   
+	    
+	</script>
+	<table id="orders", style="width:100%">
+	    <tr>
+		<th>Order ID</th>
+		<th>Description</th>
+		<th>Quantity</th>
+		<th>Deadline Date</th>
+	    </tr>
+	</table>
+    </body>
+</html>

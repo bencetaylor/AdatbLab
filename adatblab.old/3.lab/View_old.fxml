@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This JavaFX skeleton is provided for the Databases Laboratory course. 
+	Its structure should provide a general guideline for the students. As suggested 
+	by the JavaFX model, we'll have a GUI/view (this one), a controller class 
+	and a model. -->
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.collections.FXCollections ?>
+<?import java.lang.String ?>
+<?import javafx.scene.control.DatePicker?>
+
+
+<!-- All the GUI components -->
+<!-- Root (vertical box) layout -->
+<VBox fx:controller="application.Controller" xmlns:fx="http://javafx.com/fxml/1"
+	fx:id="rootLayout" alignment="CENTER" spacing="10" prefWidth="600"
+	prefHeight="460" minWidth="600" minHeight="460">
+
+	<!-- Set padding values -->
+	<padding>
+		<Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+	</padding>
+
+	<!-- Connection panel -->
+	<HBox fx:id="connectionLayout" alignment="CENTER" spacing="10">
+
+		<!-- Username field -->
+		<TextField fx:id="usernameField" maxWidth="200" maxHeight="27"
+			minWidth="100" minHeight="27" prefWidth="150" prefHeight="27"
+			onAction="#connectEventHandler" />
+
+		<!-- Password field -->
+		<TextField fx:id="passwordField" maxWidth="200" maxHeight="27"
+			minWidth="100" minHeight="27" prefWidth="150" prefHeight="27"
+			onAction="#connectEventHandler" />
+
+		<!-- Connect button -->
+		<Button fx:id="connectButton" text="Connect" prefWidth="80"
+			onAction="#connectEventHandler" />
+
+		<!-- Label to show the connection status -->
+		<Label fx:id="connectionStateLabel" minWidth="200" minHeight="17"
+			prefWidth="200" prefHeight="17" />
+
+	</HBox>
+
+	<!-- Tabbed panel -->
+	<TabPane>
+		<tabs>
+			<!-- Search tab -->
+			<Tab fx:id="searchTab" text=" Search " closable="False">
+
+				<!-- Search panel -->
+				<VBox spacing="10">
+					<padding>
+						<Insets bottom="10" left="0" right="0" top="10.0" />
+					</padding>
+
+					<!-- Search input panel -->
+					<HBox alignment="CENTER" spacing="10">
+
+						<!-- Search keyword field -->
+						<TextField fx:id="searchTextField" HBox.hgrow="ALWAYS"
+							onAction="#searchEventHandler" />
+
+						<!-- Search button -->
+						<Button text="Search" onAction="#searchEventHandler" />
+
+					</HBox>
+
+					<!-- Search table (scrollable by default) -->
+					<TableView fx:id="searchTable" editable="false">
+						<columns>
+							<!-- TODO: insert columns for showing result -->
+							<TableColumn fx:id="nameColumn" text="Name" />
+							<TableColumn fx:id="identityNumberColumn" text="Identity number" />
+						</columns>
+					</TableView>
+
+				</VBox>
+
+			</Tab>
+
+			<!-- !TODO: This is the place you should modify the tabs, you must review 
+				this -->
+
+			<Tab fx:id="editTab" text=" Edit " closable="False">
+				<GridPane hgap="10" vgap="10">
+					<Label GridPane.columnIndex="0" GridPane.rowIndex="1">
+						Sample TextBox:
+					</Label>
+					<TextField GridPane.columnIndex="1" GridPane.rowIndex="1"
+						fx:id="idTextField" />
+					<Label GridPane.columnIndex="0" GridPane.rowIndex="2">
+						Sample ComboBox:
+					</Label>
+					<ComboBox fx:id="sampleCombo" GridPane.rowIndex="2" GridPane.columnIndex="1"></ComboBox>
+					<HBox spacing="10" GridPane.columnSpan="2"
+						GridPane.columnIndex="0" GridPane.rowIndex="3">
+						<Button text="Commit" onAction="#commitEventHandler" fx:id="commitBtn"
+							disable="true" />
+						<Button text="Edit" onAction="#editEventHandler" />
+					</HBox>
+
+				</GridPane>
+
+			</Tab>
+
+			<Tab text=" Statistics" closable="False">
+
+				<!-- Search panel -->
+				<VBox spacing="10">
+					<padding>
+						<Insets bottom="10" left="0" right="0" top="10.0" />
+					</padding>
+
+
+					<HBox alignment="CENTER" spacing="10">
+
+						<Button text="statistics"
+							onAction="#statisticsEventHandler" />
+
+					</HBox>
+
+					<TableView fx:id="statisticsTable" editable="false">
+						<columns>
+						<!-- TODO: add columns -->
+						</columns>
+					</TableView>
+
+				</VBox>
+
+			</Tab>
+
+		</tabs>
+	</TabPane>
+
+</VBox>

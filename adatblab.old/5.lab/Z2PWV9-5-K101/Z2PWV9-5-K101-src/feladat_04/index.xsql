@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rend.xsl"?>
+<!--Ez a fájl a 4. feladat megoldása-->
+<!--Kapcsolódás az adatbázisszerverhez és a névtér-prefix beállítása-->
+<!--A lap-paraméterek beállítása, alapértékük: "%", valamint jelenleg nem keresünk semmire-->
+<page connection="labor" xmlns:xsql="urn:oracle-xsql" nev="%" tipus="%" vasarlas="%" search-key="none">
+    <xsql:include-param name="search-key"/>
+    <xsql:include-param name="search-value"/>
+    <!--A search-key és search-value explicit értékadása-->
+    <xsql:set-page-param name="{@search-key}" value="{@search-value}%"/>
+    <!--A feladathoz használt lekérdezés: 3 paraméteres, ezek itt megadjuk-->
+    <!--A keresés sikeressége érdekében nagybetűssé konvertáljuk a keresendő szót,
+        illetve a dátum évére keresésnél az évet le kell választani a dátumról, majd karakterekre
+        kasztolni-->
+    <xsql:query bind-params="nev tipus vasarlas" date-format="yyyy.MM.dd.">
+        SELECT 
+            *
+        FROM 
+            z2pwv9.eszkozok
+        WHERE
+            upper(nev) LIKE upper(?)
+        AND
+            upper(tipus) LIKE upper(?)
+        AND
+            TO_CHAR(EXTRACT(year FROM vasarlas)) LIKE ?
+    </xsql:query>
+</page>
