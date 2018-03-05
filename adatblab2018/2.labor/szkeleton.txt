@@ -1,0 +1,125 @@
+-- general settings
+-- ================
+-- do not echo
+set echo off
+-- do not print substitution before/after text
+set verify off
+-- set date format
+alter session set NLS_DATE_FORMAT='YYYY-MM-DD';
+-- allow PL/SQL output
+set serveroutput on
+-- disable feedback, eg. anonymous block completed
+set feedback off
+
+-- táblaeldobások ide
+
+prompt <tasks>
+
+prompt <task n="1.1">
+prompt <![CDATA[
+
+ALTER TABLE allomas
+ADD teher NUMBER(1) DEFAULT 0
+ADD CONSTRAINT TEHER_E CHECK
+(REGEXP_LIKE(teher, '[0-1]{1}'))
+ENABLE;
+
+prompt ]]>
+prompt </task>
+
+prompt <task n="1.2">
+prompt <![CDATA[
+
+ALTER TABLE allomas
+ADD varos_id number(5);
+
+CREATE TABLE varos (
+id NUMBER(5) not null,
+nev NVARCHAR2(40) not null);
+
+ALTER TABLE varos
+ADD CONSTRAINT varos_PK
+PRIMARY KEY (id);
+
+ALTER TABLE allomas
+ADD CONSTRAINT varos_FK
+FOREIGN KEY (varos_id)
+REFERENCES varos(id);
+
+prompt ]]>
+prompt </task>
+
+-- így tovább, a feladatmegoldásokat közrefogó két-két nyitó és záró prompt sor ismétlõdik értelemszerûen, a task tag n attribútumának értéke az adott feladat száma.
+
+prompt <task n="2.1">
+prompt <![CDATA[
+
+-- 2.1-es feladat megoldása ide
+
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.2">
+prompt <![CDATA[
+
+-- 2.2-es feladat megoldása ide
+
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.3">
+prompt <![CDATA[
+
+-- 2.3-es feladat megoldása ide
+
+prompt ]]>
+prompt </task>
+
+prompt <task n="2.4">
+prompt <![CDATA[
+
+-- 2.4-es feladat megoldása ide
+
+prompt ]]>
+prompt </task>
+
+-- az adatmanipuláció feladatai elõtt szükséges kiadni
+set feedback on
+
+prompt <task n="4.1">
+prompt <![CDATA[  
+
+-- 4.1-es feladat megoldása ide
+
+prompt ]]>
+prompt </task>
+prompt <task n="4.2">
+prompt <![CDATA[
+
+-- 4.2-es feladat megoldása ide
+
+prompt ]]>
+prompt </task>
+prompt <task n="4.3">
+prompt <![CDATA[
+
+-- 4.3-as feladat megoldása ide
+
+prompt ]]>
+prompt </task>
+
+-- az adatmanipuláció feladatai után szükséges kiadni
+set feedback off
+
+prompt <task n="5.1">
+prompt <![CDATA[ 
+
+-- 5.1-es feladat megoldása ide
+
+prompt ]]>
+prompt </task>
+prompt </tasks>ALTER TABLE allomas
+ADD teher NUMBER(1) DEFAULT 0
+ADD CONSTRAINT TEHER_E CHECK
+(REGEXP_LIKE(teher, '[0-1]{1}'))
+ENABLE;
