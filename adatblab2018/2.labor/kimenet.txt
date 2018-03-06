@@ -71,3 +71,113 @@ VONATSZAM TIPUS   NAP     KEZD                          VEGE                    
       2266 IC      1111100 1980-01-01 00:00:00           2100-12-31 00:00:00           Orokjarat                               
 
 11 rows selected. 
+
+2.4-es feladat
+
+VONATSZAM TIPUS   MEGJEGYZES                             
+---------- ------- ----------------------------------------
+       163 IC      lassu                                   
+       553 IC      Bufe nelkul                             
+       554 IC      Bufe nelkul                             
+      2266 IC      Orokjarat                               
+      4581 szemely Mindenutt megall
+
+2.5-ös feladat
+
+ VONATSZAM TIPUS
+---------- -------
+MEGJEGYZES                                                                     
+--------------------------------------------------------------------------------
+       163 IC      
+lassu                                                                           
+
+       164 IC      
+nincs megjegyzés                                                                
+
+       213 EC      
+nincs megjegyzés                                                                
+
+
+ VONATSZAM TIPUS
+---------- -------
+MEGJEGYZES                                                                     
+--------------------------------------------------------------------------------
+       214 EC      
+nincs megjegyzés                                                                
+
+       327 IC      
+nincs megjegyzés                                                                
+
+       328 IC      
+nincs megjegyzés                                                                
+
+
+ VONATSZAM TIPUS
+---------- -------
+MEGJEGYZES                                                                     
+--------------------------------------------------------------------------------
+       469 IC      
+nincs megjegyzés                                                                
+
+       470 IC      
+Pentek-vasarnap                                                                 
+
+       553 IC      
+Bufe nelkul                                                                     
+
+
+ VONATSZAM TIPUS
+---------- -------
+MEGJEGYZES                                                                     
+--------------------------------------------------------------------------------
+       554 IC      
+Bufe nelkul                                                                     
+
+      1145 Gyors   
+nincs megjegyzés                                                                
+
+      1146 Gyors   
+nincs megjegyzés                                                                
+
+
+ VONATSZAM TIPUS
+---------- -------
+MEGJEGYZES                                                                     
+--------------------------------------------------------------------------------
+      2113 Gyors   
+uj jarat                                                                        
+
+      2265 IC      
+nincs megjegyzés                                                                
+
+      2266 IC      
+Orokjarat                                                                       
+
+
+ VONATSZAM TIPUS
+---------- -------
+MEGJEGYZES                                                                     
+--------------------------------------------------------------------------------
+      4581 szemely 
+Mindenutt megall                                                                
+
+      6666 IC      
+nincs megjegyzés                                                                
+
+      9567 szemely 
+nincs megjegyzés                                                                
+
+
+ 18 rows selected 
+
+2.6-os feladat
+
+NEV
+----------------------------------------
+VAROS
+----------------------------------------
+Zalaegerszeg                             
+Zalaegerszeg
+
+2.7-es feladat
+
