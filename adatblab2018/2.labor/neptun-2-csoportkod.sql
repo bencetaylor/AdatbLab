@@ -85,16 +85,54 @@ prompt </task>
 
 prompt <task n="2.7">
 prompt <![CDATA[
-SELECT allomas.varos as varos, megall.vonatszam as vonatszam
-FROM megall, allomas
-WHERE allomas.ID = megall.ALLOMAS_ID(+)
+SELECT  DISTINCT allomas.varos as varos, DECODE(megall.vonatszam, NULL, 0, megall.vonatszam) as vonatszam
+FROM allomas
+LEFT OUTER JOIN megall
+ON allomas.id = megall.allomas_id
+WHERE allomas.varos IS NOT NULL
 ORDER BY varos, vonatszam;
 prompt ]]>
 prompt </task>
 
 prompt <task n="3.1">
 prompt <![CDATA[
+SELECT AVG(napok) AS atlag
+FROM
+(SELECT vonatszam, TRUNC(SYSDATE+1) - NVL(kezd, TO_DATE('2006-01-01', 'YYYY-MM-DD')) AS napok
+FROM jarat
+WHERE (vege IS NULL or vege > SYSDATE));
+prompt ]]>
+prompt </task>
 
+prompt <task n="3.2">
+prompt <![CDATA[
+SELECT vonatszam, SUM((FLOOR(ind/100)*60 + MOD(ind, 100)) - (FLOOR(erk/100)*60 + MOD(erk, 100))) as eltoltott_ido
+FROM megall
+WHERE ind IS NOT NULL and erk IS NOT NULL
+GROUP BY vonatszam
+ORDER BY eltoltott_ido;
+prompt ]]>
+prompt </task>
+
+prompt <task n="3.3">
+prompt <![CDATA[
+SELECT nev FROM
+(SELECT nev, COUNT(eltoltott_ido)*2 as megallt, SUM(eltoltott_ido) as ido
+FROM
+(SELECT allomas.nev as nev, ((FLOOR(ind/100)*60 + MOD(ind, 100)) - (FLOOR(erk/100)*60 + MOD(erk, 100))) as eltoltott_ido
+FROM allomas, megall
+WHERE allomas.id = megall.allomas_id and ind IS NOT NULL and erk IS NOT NULL)
+GROUP BY nev)
+WHERE megallt = ido;
+prompt ]]>
+prompt </task>
+
+prompt <task n="3.4">
+prompt <![CDATA[
+SELECT DISTINCT nev FROM megall, allomas
+WHERE allomas.id = megall.allomas_id and nev != 'Szombathely' and vonatszam in
+(SELECT vonatszam FROM megall, allomas
+WHERE allomas.id = megall.allomas_id and allomas.nev = 'Szombathely');
 prompt ]]>
 prompt </task>
 set feedback on

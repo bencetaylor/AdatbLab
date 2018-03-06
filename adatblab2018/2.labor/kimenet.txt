@@ -181,3 +181,201 @@ Zalaegerszeg
 
 2.7-es feladat
 
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Ács                                            4581
+Almásfüzitõ                                    4581
+Balf                                           4581
+Bécs                                            213
+Bécs                                            214
+Biatorbágy                                     4581
+Bicske                                         4581
+Budapest                                        163
+Budapest                                        164
+Budapest                                        213
+Budapest                                        214
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Budapest                                        327
+Budapest                                        328
+Budapest                                        469
+Budapest                                        470
+Budapest                                        553
+Budapest                                        554
+Budapest                                       1145
+Budapest                                       1146
+Budapest                                       2113
+Budapest                                       2265
+Budapest                                       2266
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Budapest                                       4581
+Budapest                                       6666
+Budapest                                       9567
+Csorna                                          327
+Csorna                                          328
+Csorna                                          469
+Csorna                                          470
+Csorna                                         4581
+Debrecen                                       6666
+Dunakeszi                                      9567
+Elhagyatott                                       0
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Enese                                          4581
+Fertõszentmiklós                               4581
+Göd                                            2113
+Göd                                            9567
+Gyõr                                            163
+Gyõr                                            164
+Gyõr                                            213
+Gyõr                                            214
+Gyõr                                            327
+Gyõr                                            328
+Gyõr                                            469
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Gyõr                                            470
+Gyõr                                            553
+Gyõr                                            554
+Gyõr                                           2265
+Gyõr                                           2266
+Gyõr                                           4581
+Hegyeshalom                                     213
+Hegyeshalom                                     214
+Kapuvár                                        4581
+Keszthely                                      1145
+Keszthely                                      1146
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Komárom                                         163
+Komárom                                         164
+Komárom                                         327
+Komárom                                         328
+Komárom                                         469
+Komárom                                         470
+Komárom                                         553
+Komárom                                         554
+Komárom                                        4581
+Lábatlan                                       4581
+Nagymaros                                      9567
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Siófok                                         1145
+Siófok                                         1146
+Sopron                                          327
+Sopron                                          328
+Sopron                                          469
+Sopron                                          470
+Sopron                                         1145
+Sopron                                         1146
+Sopron                                         2265
+Sopron                                         2266
+Sopron                                         4581
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Székesfehérvár                                 1145
+Székesfehérvár                                 1146
+Szob                                           9567
+Szombathely                                    1145
+Szombathely                                    1146
+Szombathely                                    2265
+Szombathely                                    2266
+Szõdliget                                      9567
+Tata                                           4581
+Tatabánya                                       163
+Tatabánya                                       164
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Tatabánya                                       327
+Tatabánya                                       328
+Tatabánya                                       469
+Tatabánya                                       470
+Tatabánya                                       553
+Tatabánya                                       554
+Tatabánya                                      4581
+Törökbálint                                    4581
+Vác                                            2113
+Vác                                            9567
+Verõcemaros                                    2113
+
+VAROS                                     VONATSZAM
+---------------------------------------- ----------
+Verõcemaros                                    9567
+Vértesszõlõs                                   4581
+Zalaegerszeg                                   1145
+Zalaegerszeg                                   1146
+Zebegény                                       2113
+Zebegény                                       9567
+
+ 105 rows selected 
+
+3.1-es feladat
+
+     ATLAG
+----------
+   5.0E+03
+
+3.2-es feladat
+
+ VONATSZAM                           ELTOLTOTT_IDO
+---------- ---------------------------------------
+       213                                       8
+      2266                                      10
+      2265                                      11
+       164                                      11
+       554                                      11
+       214                                      12
+       163                                      13
+       553                                      13
+       469                                      19
+       328                                      19
+       470                                      19
+
+ VONATSZAM                           ELTOLTOTT_IDO
+---------- ---------------------------------------
+       327                                      19
+      1145                                      30
+      1146                                      30
+      2113                                      32
+      9567                                      63
+      4581                                      81
+
+ 17 rows selected 
+
+3.3-as feladat
+
+NEV                                    
+----------------------------------------
+Almásfüzitõ                             
+Fertõszentmiklós                        
+Bicske                                  
+Enese                                   
+Balf                                    
+Biatorbágy                              
+Ács                                     
+Hegyeshalom                             
+
+ 8 rows selected 
+
+3.4-es feladat
+
+NEV                                    
+----------------------------------------
+Sopron                                  
+Budapest-Déli                           
+Gyõr                                    
+Székesfehérvár                          
+Siófok                                  
+Zalaegerszeg                            
+Keszthely                               
+
+ 7 rows selected 
