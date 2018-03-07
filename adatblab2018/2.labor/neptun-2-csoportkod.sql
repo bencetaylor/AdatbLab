@@ -67,7 +67,7 @@ prompt </task>
 
 prompt <task n="2.5">
 prompt <![CDATA[
-SELECT vonatszam, tipus, DECODE(megjegyzes, NULL, 'nincs megjegyzés', megjegyzes) AS MEGJEGYZES
+SELECT vonatszam, tipus, DECODE(megjegyzes, NULL, 'nincs megjegyzes', megjegyzes) AS MEGJEGYZES
 FROM jarat
 ORDER BY vonatszam;
 prompt ]]>
@@ -139,14 +139,42 @@ set feedback on
 
 prompt <task n="4.1">
 prompt <![CDATA[
+INSERT INTO allomas VALUES (42,'Kecskemét','Kecskemét',4000,1500, 1, null);
+prompt ]]>
+prompt </task>
 
+prompt <task n="4.2">
+prompt <![CDATA[
+UPDATE jarat SET megjegyzes = 'Minden nap'
+WHERE vonatszam = 164;
+prompt ]]>
+prompt </task>
+
+prompt <task n="4.3">
+prompt <![CDATA[
+INSERT INTO varos
+(id, nev)
+SELECT vid, nev FROM
+(SELECT ROWNUM  as vid, varos as nev
+  FROM 
+  (SELECT DISTINCT varos FROM allomas)
+  WHERE varos IS NOT NULL);
 prompt ]]>
 prompt </task>
 set feedback off
 
 prompt <task n="5.1">
 prompt <![CDATA[
-
+SELECT nev FROM
+  (SELECT nev, ROUND(SUM(eltoltott_ido) / COUNT(eltoltott_ido), 1) as atlag_ido
+  FROM
+    (SELECT allomas.nev as nev, ((FLOOR(ind/100)*60 + MOD(ind, 100)) - (FLOOR(erk/100)*60 + MOD(erk, 100))) as eltoltott_ido
+    FROM allomas, megall
+    WHERE allomas.id = megall.allomas_id and ind IS NOT NULL and erk IS NOT NULL)
+  GROUP BY nev) x,
+  (SELECT (SUM((FLOOR(ind/100)*60 + MOD(ind, 100)) - (FLOOR(erk/100)*60 + MOD(erk, 100))) / COUNT(nev)) as ossz_atlag_ido
+  FROM allomas INNER JOIN megall ON allomas.id = megall.allomas_id) y
+WHERE x.atlag_ido > y.ossz_atlag_ido;
 prompt ]]>
 prompt </task>
 prompt </tasks>

@@ -379,3 +379,29 @@ Zalaegerszeg
 Keszthely                               
 
  7 rows selected 
+
+5.1-es feladat
+
+NEV                                    
+----------------------------------------
+Budapest-Ferencváros                    
+Budapest-Kelenföld                      
+Dunakeszi                               
+Gyõr                                    
+Göd                                     
+Kapuvár                                 
+Keszthely                               
+Siófok                                  
+Sopron                                  
+Szombathely                             
+Székesfehérvár                          
+
+NEV                                    
+----------------------------------------
+Szõdliget                               
+Tata                                    
+Tatabánya                               
+Verõcemaros                             
+Vác                                     
+Vértesszõlõs                            
+Zalaegerszeg 
