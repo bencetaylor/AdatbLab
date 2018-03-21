@@ -113,13 +113,27 @@ public class VasutDal implements DataAccessLayer<JaratFejlec, Jarat, JaratVonats
 	@Override
 	public boolean commit() throws NotConnectedException {
 		checkConnected();
-		return false;
+		try {
+			connection.commit();
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		//return false;
 	}
 
 	@Override
 	public boolean rollback() throws NotConnectedException {
 		checkConnected();
-		return false;
+		try {
+			connection.rollback();
+			return true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		//return false;
 	}
 
 	@Override
@@ -134,7 +148,16 @@ public class VasutDal implements DataAccessLayer<JaratFejlec, Jarat, JaratVonats
 			String query;
 			
 			// bekapcsoljuk az autocommit-ot
-			connection.setAutoCommit(true);
+			//connection.setAutoCommit(true);
+			
+			// Megnezzuk letezik e az allomas, ha nem hibaval visszaterunk 
+			PreparedStatement checkAllomas = connection.prepareStatement("SELECT id FROM allomas WHERE id LIKE ?");
+			checkAllomas.setInt(1, foreignKey);
+			ResultSet allomasResultSet = checkAllomas.executeQuery();
+			if(!allomasResultSet.next()){
+				actionResult = ActionResult.ErrorOccurred;
+				return actionResult;
+			}
 			
 			// majd megnezzuk, hogy a kapott orderId szerpel e az adatbazisban
 			PreparedStatement preparedStatement = connection.prepareStatement("SELECT vonatszam FROM jarat WHERE vonatszam LIKE ?");
@@ -153,11 +176,36 @@ public class VasutDal implements DataAccessLayer<JaratFejlec, Jarat, JaratVonats
 				insertPreparedStatement.setInt(1, entity.getVonatszam());
 				insertPreparedStatement.setString(2, entity.getTipus());
 				insertPreparedStatement.setString(3, entity.getNap());
-				insertPreparedStatement.setDate(4, Date.valueOf(entity.getKezd()));
-				insertPreparedStatement.setDate(5, Date.valueOf(entity.getVege()));
+				
+				if(entity.getKezd() == null)
+					insertPreparedStatement.setDate(4, null);
+				else
+					insertPreparedStatement.setDate(4, Date.valueOf(entity.getKezd()));
+				if(entity.getVege() == null)
+					insertPreparedStatement.setDate(5, null);
+				else
+					insertPreparedStatement.setDate(5, Date.valueOf(entity.getVege()));
+				
 				insertPreparedStatement.setString(6, entity.getMegjegyzes());
 				
 				insertPreparedStatement.executeUpdate();
+				
+				// Megnezzuk melyik a legnagyobb id a megall tablaban, majd ezt megnovelve felhasznaljuk az uj ertek beszurasakor
+				Statement megallId = connection.createStatement();
+				ResultSet megallIdResult = megallId.executeQuery("SELECT MAX(id) as value FROM megall");
+				megallIdResult.next();
+				int newMegallId = megallIdResult.getInt("value");
+				newMegallId++;
+				
+				query = "INSERT INTO megall (id, vonatszam, allomas_id, erk, ind) VALUES (?, ?, ?, ?, ?)";
+				PreparedStatement megallPreparedStatement = connection.prepareStatement(query);
+				megallPreparedStatement.setInt(1, newMegallId);
+				megallPreparedStatement.setInt(2, entity.getVonatszam());
+				megallPreparedStatement.setInt(3, foreignKey);
+				megallPreparedStatement.setInt(4, 1015);
+				megallPreparedStatement.setInt(5, 1030);
+				
+				megallPreparedStatement.executeUpdate();
 		
 				// insert visszateresi ertek
 				actionResult = ActionResult.InsertOccurred;
@@ -171,8 +219,17 @@ public class VasutDal implements DataAccessLayer<JaratFejlec, Jarat, JaratVonats
 				
 				updatePreparedStatement.setString(1, entity.getTipus());
 				updatePreparedStatement.setString(2, entity.getNap());
-				updatePreparedStatement.setDate(3, Date.valueOf(entity.getKezd()));
-				updatePreparedStatement.setDate(4, Date.valueOf(entity.getVege()));
+				// Mivel a datum megadasa nem kotelezo ellenorizzuk hogy null e
+				if(entity.getKezd() == null)
+					updatePreparedStatement.setDate(3, null);
+				else
+					updatePreparedStatement.setDate(3, Date.valueOf(entity.getKezd()));
+				
+				if(entity.getVege() == null)
+					updatePreparedStatement.setDate(4, null);
+				else
+					updatePreparedStatement.setDate(4, Date.valueOf(entity.getVege()));
+				
 				updatePreparedStatement.setString(5, entity.getMegjegyzes());
 				updatePreparedStatement.setInt(6, entity.getVonatszam());
 				
@@ -186,6 +243,7 @@ public class VasutDal implements DataAccessLayer<JaratFejlec, Jarat, JaratVonats
 		catch (SQLException e){
 			e.printStackTrace();
 			actionResult = ActionResult.ErrorOccurred;
+			rollback();
 			return actionResult;
 		}
 	}
@@ -195,15 +253,23 @@ public class VasutDal implements DataAccessLayer<JaratFejlec, Jarat, JaratVonats
 		checkConnected();
 		try {
 			connection.setAutoCommit(value);
+			if(connection.getAutoCommit() == value)
+				return true;
+			else
+				return false;
 		} catch (SQLException e) {
 			e.printStackTrace();
+			return false;
 		}
-		return false;
 	}
 
 	@Override
 	public void disconnect() {
-		
+		try {
+			connection.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override

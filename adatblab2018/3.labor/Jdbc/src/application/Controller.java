@@ -4,6 +4,7 @@ import java.net.URL;
 import java.text.ParseException;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.regex.Pattern;
 
 import dal.ActionResult;
 import dal.DataAccessLayer;
@@ -80,6 +81,9 @@ public class Controller implements Initializable {
 	TextField megjegyzesTextField;
 	
 	@FXML
+	TextField allomasTextField;
+	
+	@FXML
 	Label actionResultStateLabel;
 
 	public Controller() {
@@ -131,13 +135,26 @@ public class Controller implements Initializable {
 
 	@FXML
 	public void commitEventHandler() {
-		//TODO: handle the click of the commit button.
+		try {
+			if(dal.commit()){
+				actionResultStateLabel.setText("CommitOccured");
+				actionResultStateLabel.setTextFill(Paint.valueOf("green"));
+			}
+			else{
+				dal.rollback();
+				actionResultStateLabel.setText("ErrorOccured, Rollback!");
+				actionResultStateLabel.setTextFill(Paint.valueOf("red"));
+			}
+		} catch (NotConnectedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@FXML
 	public void editEventHandler() {
 		try 
 		{
+			dal.setAutoCommit(false);
 			// Letrehozunk egy uj valtozot, amellyel meghivjuk az insertOrUpdate fuggvenyt
 			Jarat jarat = new Jarat();
 			
@@ -149,11 +166,12 @@ public class Controller implements Initializable {
 			jarat.parseVege(vegeTextField.getText());
 			jarat.parseMegjegyzes(megjegyzesTextField.getText());
 			
+			
 			// Meghivjuk az insertOrUpdate fuggvenyt, majd a vegeredmenyrol ertesitjuk a felhasznalot
-			ActionResult actionResult = dal.insertOrUpdate(jarat, null);
+			ActionResult actionResult = dal.insertOrUpdate(jarat, parseAllomas(allomasTextField.getText()));
 			
 			actionResultStateLabel.setText(actionResult.toString());
-			actionResultStateLabel.setTextFill(Paint.valueOf("green"));
+			//actionResultStateLabel.setTextFill(Paint.valueOf("green"));
 			
 		}
 		catch (NotConnectedException e) {
@@ -180,6 +198,10 @@ public class Controller implements Initializable {
 			}
 			if(e.getFieldName().equals("quantity")){
 				// Hibas mennyiseg kivetel elkapasa - ertesitjuk a felhasznalot
+				actionResultStateLabel.setText("Kerem szamot irjon a mezobe!");
+				actionResultStateLabel.setTextFill(Paint.valueOf("red"));
+			}
+			if(e.getFieldName().equals("allomas")){
 				actionResultStateLabel.setText("Kerem szamot irjon a mezobe!");
 				actionResultStateLabel.setTextFill(Paint.valueOf("red"));
 			}
@@ -210,11 +232,20 @@ public class Controller implements Initializable {
 		napTextField.setPromptText("0111011");
 		kezdTextField.setPromptText("YYYY-MM-DD");
 		vegeTextField.setPromptText("YYYY-MM-DD");
+		allomasTextField.setPromptText("5 digit number!");
 		//megjegyzesTextField.setPromptText("megjegyzes");
 	}
 
 	public void disconnect() {
 		dal.disconnect();
+	}
+	
+	public int parseAllomas(String allomas) throws ValidationException{
+		if (!Pattern.matches("[0-9]\\d{0,4}", allomas)) {
+			throw new ValidationException("allomas");		
+		}
+		else
+			return Integer.parseInt(allomas);
 	}
 
 }

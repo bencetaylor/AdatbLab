@@ -71,6 +71,10 @@ public class Jarat {
     }
 
     public void parseKezd(String kezd) throws ValidationException, ParseException {
+    	if(kezd.equals("")){
+    		setKezd(null);
+    		return;
+    	}
     	if (!Pattern.matches("[1-9]\\d{3}\\-[0-1]\\d\\-[0-3]\\d", kezd)) {
     		throw new ValidationException("kezd");
     	}
@@ -90,6 +94,10 @@ public class Jarat {
     }
 
     public void parseVege(String vege) throws ValidationException, ParseException {
+    	if(vege.equals("")){
+    		setVege(null);
+    		return;
+    	}
     	if (!Pattern.matches("[1-9]\\d{3}\\-[0-1]\\d\\-[0-3]\\d", vege)) {
     		throw new ValidationException("vege");
     	}

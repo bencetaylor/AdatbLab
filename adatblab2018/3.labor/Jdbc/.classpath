@@ -7,6 +7,6 @@
 			<accessrule kind="accessible" pattern="javafx/**"/>
 		</accessrules>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/Dokumentumok/Workspace/Jdbc/lib/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="F:/Bence/workspace/Jdbc/lib/ojdbc7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

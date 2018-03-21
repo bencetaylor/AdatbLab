@@ -135,14 +135,19 @@
 					</Label>
 					<TextField GridPane.columnIndex="1" GridPane.rowIndex="6"
 						fx:id="megjegyzesTextField" />
+					<Label GridPane.columnIndex="0" GridPane.rowIndex="7">
+						AllomasID:
+					</Label>
+					<TextField GridPane.columnIndex="1" GridPane.rowIndex="7"
+						fx:id="allomasTextField" />
 					<HBox spacing="10" GridPane.columnSpan="2"
-						GridPane.columnIndex="0" GridPane.rowIndex="7">
+						GridPane.columnIndex="0" GridPane.rowIndex="8">
 						<Button text="Commit" onAction="#commitEventHandler" fx:id="commitBtn"
-							disable="true" />
+							disable="false" />
 						<Button text="Edit" onAction="#editEventHandler" />
 					</HBox>
 					<!-- Label to show the statement status -->
-					<Label GridPane.columnIndex="0" GridPane.rowIndex="8"
+					<Label GridPane.columnIndex="0" GridPane.rowIndex="9"
 					fx:id="actionResultStateLabel" 
 					minWidth="400" minHeight="20"
 					prefWidth="400" prefHeight="20" />
