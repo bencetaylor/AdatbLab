@@ -1,0 +1,29 @@
+{
+  "allomasok": [
+    {
+      "id": 1, 
+      "nev": "Budapest-Keleti", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 2, 
+      "nev": "Budapest-Nyugati", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 3, 
+      "nev": "Budapest-D\u00e9li", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 4, 
+      "nev": "Budapest-Kelenf\u00f6ld", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 5, 
+      "nev": "Budapest-Ferencv\u00e1ros", 
+      "varos": "Budapest"
+    }
+  ]
+}

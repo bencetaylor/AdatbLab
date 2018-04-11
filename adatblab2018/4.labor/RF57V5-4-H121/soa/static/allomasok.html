@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Allomasok</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+			if (location.protocol == "file:") {
+				document.write("<div style='background: #f00; color: #fff; " +
+					"padding: 16px; font-weight: bold; text-align: center;'>" +
+					"You've opened this file from your local hard drive. " +
+					"You won't be able to call your services this way.<br />" +
+					"Open this file from <code>http://localhost:XXXXX/static/" +
+					location.href.split("/").pop() + "</code> where <code>XXXXX</code> is " +
+					"your own port printed by Flask on the console.</div>");
+			}
+
+            // A gomb esemenykezeloje
+            function button_click_handler(evt) {
+                var button = evt.target;
+                var id = button.name
+                $.ajax({
+                    url: "../allomasok/" + id + ".json",
+                    dataType: "json",
+                    success: function (allomas){
+                        var alertText = "Nev = " + allomas.nev + "\nVaros = " 
+                        + allomas.varos + "\nSzelesseg = " + allomas.szelesseg + 
+                        "\nHosszusag = " + allomas.hosszusag + "\nAtlagutas = " + 
+                        allomas.atlagutas + "\nSztrajkutas = " + allomas.sztrajkutas;
+
+                        alert(alertText);}
+                    });
+            }
+
+            function load_data_into_table(data) {
+                var allomasok = data.allomasok;
+                var table = document.getElementById("allomasok");
+
+                for (var i = 0; i < allomasok.length; i++) {
+                    var allomas = allomasok[i];
+
+                    /* insert row and cells on last position (-1)
+                       https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement.insertRow */
+                    var row = table.insertRow(-1);
+                    var cell_id = row.insertCell(-1);
+                    var cell_nev = row.insertCell(-1);
+                    var cell_varos = row.insertCell(-1);
+                    var cell_btn = row.insertCell(-1);
+
+                    /* $(element) makes it possible to call jQuery
+                       convenience methods on them like text() */
+                    $(cell_id).text(allomas.id);
+                    $(cell_nev).text(allomas.nev);
+                    $(cell_varos).text(allomas.varos);
+
+                    var button = document.createElement("input");
+                    button.setAttribute("type", "button");
+                    button.setAttribute("value", ">");
+                    button.setAttribute("name", allomas.id);
+                    button.setAttribute("ID", "allomas_reszletek_" + allomas.id);
+                    cell_btn.appendChild(button);
+                    $(button).click(button_click_handler);
+                }
+            }
+
+            $(function load_Page() {
+                $.ajax({
+                    url: "../allomasok.json",
+                    dataType: "json",
+                    success: load_data_into_table
+                });
+            });
+
+        </script>
+        <table id="allomasok">
+            <tr>
+                <th>id</th>
+                <th>nev</th>
+                <th>varos</th>
+            </tr>
+        </table>
+    </body>
+</html>
