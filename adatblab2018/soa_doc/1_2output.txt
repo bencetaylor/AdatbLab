@@ -1,0 +1,6 @@
+{
+  "atlagutas": 9000, 
+  "nev": "Budapest-Keleti", 
+  "sztrajkutas": 2000, 
+  "varos": "Budapest"
+}

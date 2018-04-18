@@ -1,0 +1,209 @@
+{
+  "allomasok": [
+    {
+      "id": 1, 
+      "nev": "Budapest-Keleti", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 2, 
+      "nev": "Budapest-Nyugati", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 3, 
+      "nev": "Budapest-D\u00e9li", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 4, 
+      "nev": "Budapest-Kelenf\u00f6ld", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 5, 
+      "nev": "Budapest-Ferencv\u00e1ros", 
+      "varos": "Budapest"
+    }, 
+    {
+      "id": 6, 
+      "nev": "T\u00f6r\u00f6kb\u00e1lint", 
+      "varos": "T\u00f6r\u00f6kb\u00e1lint"
+    }, 
+    {
+      "id": 7, 
+      "nev": "Biatorb\u00e1gy", 
+      "varos": "Biatorb\u00e1gy"
+    }, 
+    {
+      "id": 8, 
+      "nev": "Bicske", 
+      "varos": "Bicske"
+    }, 
+    {
+      "id": 9, 
+      "nev": "Tatab\u00e1nya", 
+      "varos": "Tatab\u00e1nya"
+    }, 
+    {
+      "id": 10, 
+      "nev": "V\u00e9rtessz\u0151l\u0151s", 
+      "varos": "V\u00e9rtessz\u0151l\u0151s"
+    }, 
+    {
+      "id": 11, 
+      "nev": "Tata", 
+      "varos": "Tata"
+    }, 
+    {
+      "id": 12, 
+      "nev": "Alm\u00e1sf\u00fczit\u0151", 
+      "varos": "Alm\u00e1sf\u00fczit\u0151"
+    }, 
+    {
+      "id": 13, 
+      "nev": "Kom\u00e1rom", 
+      "varos": "Kom\u00e1rom"
+    }, 
+    {
+      "id": 14, 
+      "nev": "\u00c1cs", 
+      "varos": "\u00c1cs"
+    }, 
+    {
+      "id": 15, 
+      "nev": "Gy\u0151r", 
+      "varos": "Gy\u0151r"
+    }, 
+    {
+      "id": 16, 
+      "nev": "Hegyeshalom", 
+      "varos": "Hegyeshalom"
+    }, 
+    {
+      "id": 17, 
+      "nev": "Wien-S\u00fcdbahnhof", 
+      "varos": "B\u00e9cs"
+    }, 
+    {
+      "id": 18, 
+      "nev": "Enese", 
+      "varos": "Enese"
+    }, 
+    {
+      "id": 19, 
+      "nev": "Eternitgy\u00e1r", 
+      "varos": "L\u00e1batlan"
+    }, 
+    {
+      "id": 20, 
+      "nev": "Csorna", 
+      "varos": "Csorna"
+    }, 
+    {
+      "id": 21, 
+      "nev": "Kapuv\u00e1r", 
+      "varos": "Kapuv\u00e1r"
+    }, 
+    {
+      "id": 22, 
+      "nev": "Fert\u0151szentmikl\u00f3s", 
+      "varos": "Fert\u0151szentmikl\u00f3s"
+    }, 
+    {
+      "id": 23, 
+      "nev": "Balf", 
+      "varos": "Balf"
+    }, 
+    {
+      "id": 24, 
+      "nev": "Sopron", 
+      "varos": "Sopron"
+    }, 
+    {
+      "id": 25, 
+      "nev": "Dunakeszi", 
+      "varos": "Dunakeszi"
+    }, 
+    {
+      "id": 26, 
+      "nev": "G\u00f6d", 
+      "varos": "G\u00f6d"
+    }, 
+    {
+      "id": 27, 
+      "nev": "Sz\u0151dliget", 
+      "varos": "Sz\u0151dliget"
+    }, 
+    {
+      "id": 28, 
+      "nev": "V\u00e1c", 
+      "varos": "V\u00e1c"
+    }, 
+    {
+      "id": 29, 
+      "nev": "Ver\u0151cemaros", 
+      "varos": "Ver\u0151cemaros"
+    }, 
+    {
+      "id": 30, 
+      "nev": "Nagymaros", 
+      "varos": "Nagymaros"
+    }, 
+    {
+      "id": 31, 
+      "nev": "Zebeg\u00e9ny", 
+      "varos": "Zebeg\u00e9ny"
+    }, 
+    {
+      "id": 32, 
+      "nev": "Szob", 
+      "varos": "Szob"
+    }, 
+    {
+      "id": 33, 
+      "nev": "Debrecen", 
+      "varos": "Debrecen"
+    }, 
+    {
+      "id": 34, 
+      "nev": "Elhagyatott", 
+      "varos": "Elhagyatott"
+    }, 
+    {
+      "id": 35, 
+      "nev": "Kisalf\u00f6ld szerv\u00edz", 
+      "varos": null
+    }, 
+    {
+      "id": 36, 
+      "nev": "Szerv\u00edz", 
+      "varos": null
+    }, 
+    {
+      "id": 37, 
+      "nev": "Sz\u00e9kesfeh\u00e9rv\u00e1r", 
+      "varos": "Sz\u00e9kesfeh\u00e9rv\u00e1r"
+    }, 
+    {
+      "id": 38, 
+      "nev": "Si\u00f3fok", 
+      "varos": "Si\u00f3fok"
+    }, 
+    {
+      "id": 39, 
+      "nev": "Keszthely", 
+      "varos": "Keszthely"
+    }, 
+    {
+      "id": 40, 
+      "nev": "Zalaegerszeg", 
+      "varos": "Zalaegerszeg"
+    }, 
+    {
+      "id": 41, 
+      "nev": "Szombathely", 
+      "varos": "Szombathely"
+    }
+  ]
+}

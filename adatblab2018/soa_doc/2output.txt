@@ -1,0 +1,8 @@
+{
+  "atlagutas": 9000, 
+  "hosszusag": "19.0404707", 
+  "nev": "Budapest-Keleti", 
+  "szelesseg": "47.4983815", 
+  "sztrajkutas": 2000, 
+  "varos": "Budapest"
+}

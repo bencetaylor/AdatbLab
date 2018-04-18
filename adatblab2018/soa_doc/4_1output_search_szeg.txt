@@ -1,0 +1,9 @@
+{
+  "allomasok": [
+    {
+      "id": 40, 
+      "nev": "Zalaegerszeg", 
+      "varos": "Zalaegerszeg"
+    }
+  ]
+}

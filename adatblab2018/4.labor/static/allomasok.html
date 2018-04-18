@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Allomasok</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+			if (location.protocol == "file:") {
+				document.write("<div style='background: #f00; color: #fff; " +
+					"padding: 16px; font-weight: bold; text-align: center;'>" +
+					"You've opened this file from your local hard drive. " +
+					"You won't be able to call your services this way.<br />" +
+					"Open this file from <code>http://localhost:XXXXX/static/" +
+					location.href.split("/").pop() + "</code> where <code>XXXXX</code> is " +
+					"your own port printed by Flask on the console.</div>");
+			}
+
+            // Meghivja az oldal betolteset vegzo fuggvenyt 5 masodpercenkent
+            var reload = window.setInterval(load_Page, 5000);
+
+            // A gomb esemenykezeloje
+            function button_click_handler(evt) {
+                var button = evt.target;
+                var id = button.name
+                $.ajax({
+                    url: "../allomasok/" + id + ".json",
+                    dataType: "json",
+                    success: popup
+                });
+            }
+
+            // Parameterkent kapott adatok megjelenitese popup-ban
+            function popup(allomas) {
+                alert("Nev: " + allomas.nev +
+                      "\nVaros: " + allomas.varos +
+                      "\nSzelesseg: " + allomas.szelesseg +
+                      "\nHosszusag: " + allomas.hosszusag +
+                      "\nAtlagutas: " + allomas.atlagutas +
+                      "\nSztrajkutas: " + allomas.sztrajkutas);
+    	    }
+
+            var oldData;
+
+            var tableData = 0;
+
+            function load_data_into_table(data) {
+                var allomasok = data.allomasok;
+                var table = document.getElementById("allomasok");
+                // Eddigi sorok szama
+                var a = tableData;
+                
+                // Kiuritjuk a tablazatot, ha esetleg lett volna benne adat.
+                for (var j = 0; j < tableData; j++) {
+                    table.deleteRow(+1);
+                }
+                // A tablazat feltoltese
+                for (tableData = 0; tableData < allomasok.length; tableData++) {
+                    var allomas = allomasok[tableData];
+                    var row = table.insertRow(-1);
+                    
+                    var cell_id = row.insertCell(-1);
+                    var cell_nev = row.insertCell(-1);
+                    var cell_varos = row.insertCell(-1);
+                    var cell_btn = row.insertCell(-1);
+                    
+                    $(cell_id).text(allomas.id);
+                    $(cell_nev).text(allomas.nev);
+                    $(cell_varos).text(allomas.varos);
+                    
+                    
+                    // 6. feladat kiegeszites:
+                    var button = document.createElement("input");
+
+                    button.setAttribute("type", "button");
+                    button.setAttribute("value", ">");
+                    button.setAttribute("name", allomas.id);
+                    
+                    button.setAttribute("ID", "allomas_reszletek_" + allomas.id);
+                    
+                    cell_btn.appendChild(button);
+                    
+                    $(button).click(button_click_handler);
+                }
+                compare(oldData, allomasok);
+            }
+
+            function compare(olddata, tabla) {
+                // Ha eloszor fot le a fuggveny, az oldData meg nem letezik,
+                // tehat a tablazat biztosan kulonbozni fog a semmitol. Ekkor nem kell hogy lefusson.
+                if (olddata == null) {
+                    oldData = tabla;
+                    return;
+                }
+                
+                var j = 0;
+                // Egyesevel osszehasonlitjuk a ket tabla elemeit.
+                for (var i = 0; i < tabla.length && j < olddata.length; i++) {
+                    // A regi tabla jelenlegi eleme
+                    allomas1 = olddata[j];
+                    // Az uj tabla jelenlegi eleme
+                    allomas2 = tabla[i];
+                    // Ha a ket elem barmelyik attributumaban is kulonbozik, akkor valtozas tortent
+                    if (allomas1.id != allomas2.id || allomas1.nev != allomas2.nev || allomas1.varos != allomas2.varos) {                        
+                        if (i+1 < tabla.length && allomas1.id == tabla[i+1].id) {
+                            // Az uj elem az uj tabla jelenlegi eleme
+                            alert("Uj allomas az adatbazisban: " + allomas2.is);
+                            i++;
+                        }
+                        // Ha a regi tabla kovetkezo eleme megegyezik az uj tabla jelenlegi elemevel, 
+                        // akkor egy elemet toroltek a tablabol!
+                        else if (j+1 < olddata.length && olddata[j+1].id == allomas2.id) {
+                            // Ez az elem a regi tabla jelenlegi eleme
+                            alert("Ezt az allomast toroltek: " + allomas1.id);
+                            j++;
+                        }
+                        // Ha megegyezik az order_id, vagyis a ket elem megegyezik
+                        else if (allomas1.id == allomas2.id) {
+                            // Megnezzuk, hogy a leirasban, mennyisegben vagy lejarati datumban kulonboznek-e!
+                            if (allomas1.nev != allomas2.nev)
+                                alert("" + allomas1.order_id + " neve " + allomas1.nev + "-rol " + allomas2.nev + "-re valtozott");
+                            else if 
+                                (allomas1.varos != allomas2.varos) alert("" + allomas1.id + " varosa " + allomas1.varos + "-rol " + allomas2.varos + "-re valtozott");
+                            }
+                    }
+                    j++;
+                }
+                // A vizsgalat vegen a jelenlegi tabla lesz az oldData
+                oldData = tabla;
+            }
+
+            // Az oldal betolteset kiszerveztem egy kulon fuggvenybe, igy meg tudjuk hivni 5 masodpercenkent
+            function load_Page() {
+                $.ajax({
+                    url: "../allomasok.json",
+                    dataType: "json",
+                    success: load_data_into_table
+                });
+            }
+
+            $(load_Page);
+
+        </script>
+        <table id="allomasok">
+            <tr>
+                <th>id</th>
+                <th>nev</th>
+                <th>varos</th>
+            </tr>
+        </table>
+    </body>
+</html>
