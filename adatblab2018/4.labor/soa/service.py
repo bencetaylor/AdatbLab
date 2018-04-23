@@ -241,7 +241,7 @@ def delete_or_put(id):
                 # Ha Put metodusrol van szo frissitjuk az adott id-ju allomas adatait
                 elif request.method == 'PUT':
                     # A keres torzseben kapott json formatumu adatok - ezekkel modoitjuk az allomast
-                    data = request.json
+                    data = request.get_json()
                     try:
                         conn.begin()
                         cur.execute("UPDATE allomas SET nev = :nev, varos = :varos, atlagutas = :atlagutas, sztrajkutas = :sztrajkutas WHERE id = :id", nev=data['nev'], varos=data['varos'], atlagutas=data['atlagutas'], sztrajkutas=data['sztrajkutas'], id=id)
@@ -264,7 +264,7 @@ def post():
     if request.method == 'POST':
         conn = get_db()
         # elkerjuk a keres torzsebol az adatokat
-        data = request.json
+        data = request.get_json()
         try:
             cur = conn.cursor()
             try:
