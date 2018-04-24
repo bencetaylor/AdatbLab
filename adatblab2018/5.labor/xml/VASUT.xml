@@ -1,0 +1,1077 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<vasut element-type="dataset">
+  <allomas element-type="recordset">
+    <record element-type="record" id="1">
+      <nev is-null="False">Budapest-Keleti</nev>
+      <varos is-null="False">Budapest</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="2">
+      <nev is-null="False">Budapest-Nyugati</nev>
+      <varos is-null="False">Budapest</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="3">
+      <nev is-null="False">Budapest-Déli</nev>
+      <varos is-null="False">Budapest</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="4">
+      <nev is-null="False">Budapest-Kelenföld</nev>
+      <varos is-null="False">Budapest</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="5">
+      <nev is-null="False">Budapest-Ferencváros</nev>
+      <varos is-null="False">Budapest</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="6">
+      <nev is-null="False">Törökbálint</nev>
+      <varos is-null="False">Törökbálint</varos>
+      <atlagutas is-null="False">6000</atlagutas>
+      <sztrajkutas is-null="False">1200</sztrajkutas>
+    </record>
+    <record element-type="record" id="7">
+      <nev is-null="False">Biatorbágy</nev>
+      <varos is-null="False">Biatorbágy</varos>
+      <atlagutas is-null="False">6000</atlagutas>
+      <sztrajkutas is-null="False">1200</sztrajkutas>
+    </record>
+    <record element-type="record" id="8">
+      <nev is-null="False">Bicske</nev>
+      <varos is-null="False">Bicske</varos>
+      <atlagutas is-null="False">6000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="9">
+      <nev is-null="False">Tatabánya</nev>
+      <varos is-null="False">Tatabánya</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">3000</sztrajkutas>
+    </record>
+    <record element-type="record" id="10">
+      <nev is-null="False">Vértesszőlős</nev>
+      <varos is-null="False">Vértesszőlős</varos>
+      <atlagutas is-null="False">1000</atlagutas>
+      <sztrajkutas is-null="False">200</sztrajkutas>
+    </record>
+    <record element-type="record" id="11">
+      <nev is-null="False">Tata</nev>
+      <varos is-null="False">Tata</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="12">
+      <nev is-null="False">Almásfüzitő</nev>
+      <varos is-null="False">Almásfüzitő</varos>
+      <atlagutas is-null="False">2000</atlagutas>
+      <sztrajkutas is-null="False">400</sztrajkutas>
+    </record>
+    <record element-type="record" id="13">
+      <nev is-null="False">Komárom</nev>
+      <varos is-null="False">Komárom</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">1800</sztrajkutas>
+    </record>
+    <record element-type="record" id="14">
+      <nev is-null="False">Ács</nev>
+      <varos is-null="False">Ács</varos>
+      <atlagutas is-null="False">1500</atlagutas>
+      <sztrajkutas is-null="False">300</sztrajkutas>
+    </record>
+    <record element-type="record" id="15">
+      <nev is-null="False">Győr</nev>
+      <varos is-null="False">Győr</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="16">
+      <nev is-null="False">Hegyeshalom</nev>
+      <varos is-null="False">Hegyeshalom</varos>
+      <atlagutas is-null="False">1700</atlagutas>
+      <sztrajkutas is-null="False">500</sztrajkutas>
+    </record>
+    <record element-type="record" id="17">
+      <nev is-null="False">Wien-Südbahnhof</nev>
+      <varos is-null="False">Bécs</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2400</sztrajkutas>
+    </record>
+    <record element-type="record" id="18">
+      <nev is-null="False">Enese</nev>
+      <varos is-null="False">Enese</varos>
+      <atlagutas is-null="False">1000</atlagutas>
+      <sztrajkutas is-null="False">200</sztrajkutas>
+    </record>
+    <record element-type="record" id="19">
+      <nev is-null="False">Eternitgyár</nev>
+      <varos is-null="False">Lábatlan</varos>
+      <atlagutas is-null="False">2000</atlagutas>
+      <sztrajkutas is-null="False">400</sztrajkutas>
+    </record>
+    <record element-type="record" id="20">
+      <nev is-null="False">Csorna</nev>
+      <varos is-null="False">Csorna</varos>
+      <atlagutas is-null="False">1000</atlagutas>
+      <sztrajkutas is-null="False">200</sztrajkutas>
+    </record>
+    <record element-type="record" id="21">
+      <nev is-null="False">Kapuvár</nev>
+      <varos is-null="False">Kapuvár</varos>
+      <atlagutas is-null="False">1000</atlagutas>
+      <sztrajkutas is-null="False">200</sztrajkutas>
+    </record>
+    <record element-type="record" id="22">
+      <nev is-null="False">Fertőszentmiklós</nev>
+      <varos is-null="False">Fertőszentmiklós</varos>
+      <atlagutas is-null="False">1000</atlagutas>
+      <sztrajkutas is-null="False">200</sztrajkutas>
+    </record>
+    <record element-type="record" id="23">
+      <nev is-null="False">Balf</nev>
+      <varos is-null="False">Balf</varos>
+      <atlagutas is-null="False">1000</atlagutas>
+      <sztrajkutas is-null="False">200</sztrajkutas>
+    </record>
+    <record element-type="record" id="24">
+      <nev is-null="False">Sopron</nev>
+      <varos is-null="False">Sopron</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="25">
+      <nev is-null="False">Dunakeszi</nev>
+      <varos is-null="False">Dunakeszi</varos>
+      <atlagutas is-null="False">3000</atlagutas>
+      <sztrajkutas is-null="False">600</sztrajkutas>
+    </record>
+    <record element-type="record" id="26">
+      <nev is-null="False">Göd</nev>
+      <varos is-null="False">Göd</varos>
+      <atlagutas is-null="False">2500</atlagutas>
+      <sztrajkutas is-null="False">1000</sztrajkutas>
+    </record>
+    <record element-type="record" id="27">
+      <nev is-null="False">Sződliget</nev>
+      <varos is-null="False">Sződliget</varos>
+      <atlagutas is-null="False">1500</atlagutas>
+      <sztrajkutas is-null="False">300</sztrajkutas>
+    </record>
+    <record element-type="record" id="28">
+      <nev is-null="False">Vác</nev>
+      <varos is-null="False">Vác</varos>
+      <atlagutas is-null="False">3000</atlagutas>
+      <sztrajkutas is-null="False">600</sztrajkutas>
+    </record>
+    <record element-type="record" id="29">
+      <nev is-null="False">Verőcemaros</nev>
+      <varos is-null="False">Verőcemaros</varos>
+      <atlagutas is-null="False">2000</atlagutas>
+      <sztrajkutas is-null="False">500</sztrajkutas>
+    </record>
+    <record element-type="record" id="30">
+      <nev is-null="False">Nagymaros</nev>
+      <varos is-null="False">Nagymaros</varos>
+      <atlagutas is-null="False">1500</atlagutas>
+      <sztrajkutas is-null="False">300</sztrajkutas>
+    </record>
+    <record element-type="record" id="31">
+      <nev is-null="False">Zebegény</nev>
+      <varos is-null="False">Zebegény</varos>
+      <atlagutas is-null="False">1000</atlagutas>
+      <sztrajkutas is-null="False">200</sztrajkutas>
+    </record>
+    <record element-type="record" id="32">
+      <nev is-null="False">Szob</nev>
+      <varos is-null="False">Szob</varos>
+      <atlagutas is-null="False">2300</atlagutas>
+      <sztrajkutas is-null="False">1000</sztrajkutas>
+    </record>
+    <record element-type="record" id="33">
+      <nev is-null="False">Debrecen</nev>
+      <varos is-null="False">Debrecen</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">4000</sztrajkutas>
+    </record>
+    <record element-type="record" id="34">
+      <nev is-null="False">Elhagyatott</nev>
+      <varos is-null="False">Elhagyatott</varos>
+      <atlagutas is-null="False">0</atlagutas>
+      <sztrajkutas is-null="False">0</sztrajkutas>
+    </record>
+    <record element-type="record" id="35">
+      <nev is-null="False">Kisalföld szervíz</nev>
+      <varos is-null="True"/>
+      <atlagutas is-null="False">0</atlagutas>
+      <sztrajkutas is-null="False">0</sztrajkutas>
+    </record>
+    <record element-type="record" id="36">
+      <nev is-null="False">Szervíz</nev>
+      <varos is-null="True"/>
+      <atlagutas is-null="False">0</atlagutas>
+      <sztrajkutas is-null="False">0</sztrajkutas>
+    </record>
+    <record element-type="record" id="37">
+      <nev is-null="False">Székesfehérvár</nev>
+      <varos is-null="False">Székesfehérvár</varos>
+      <atlagutas is-null="False">8000</atlagutas>
+      <sztrajkutas is-null="False">3000</sztrajkutas>
+    </record>
+    <record element-type="record" id="38">
+      <nev is-null="False">Siófok</nev>
+      <varos is-null="False">Siófok</varos>
+      <atlagutas is-null="False">6000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="39">
+      <nev is-null="False">Keszthely</nev>
+      <varos is-null="False">Keszthely</varos>
+      <atlagutas is-null="False">5000</atlagutas>
+      <sztrajkutas is-null="False">2000</sztrajkutas>
+    </record>
+    <record element-type="record" id="40">
+      <nev is-null="False">Zalaegerszeg</nev>
+      <varos is-null="False">Zalaegerszeg</varos>
+      <atlagutas is-null="False">8000</atlagutas>
+      <sztrajkutas is-null="False">4000</sztrajkutas>
+    </record>
+    <record element-type="record" id="41">
+      <nev is-null="False">Szombathely</nev>
+      <varos is-null="False">Szombathely</varos>
+      <atlagutas is-null="False">9000</atlagutas>
+      <sztrajkutas is-null="False">4000</sztrajkutas>
+    </record>
+  </allomas>
+  <jarat element-type="recordset">
+    <record element-type="record" vonatszam="213">
+      <tipus is-null="False">EC</tipus>
+      <nap is-null="False">0100100</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="214">
+      <tipus is-null="False">EC</tipus>
+      <nap is-null="False">0010010</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="327">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1111000</nap>
+      <kezd is-null="True"/>
+      <vege is-null="False" date="2012-10-31" time="00:00:00"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="328">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1111000</nap>
+      <kezd is-null="True"/>
+      <vege is-null="False" date="2012-10-31" time="00:00:00"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="553">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1010100</nap>
+      <kezd is-null="False" date="2012-01-01" time="00:00:00"/>
+      <vege is-null="False" date="2012-08-31" time="00:00:00"/>
+      <megjegyzes is-null="False">Bufe nelkul</megjegyzes>
+    </record>
+    <record element-type="record" vonatszam="554">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1010100</nap>
+      <kezd is-null="False" date="2012-01-01" time="00:00:00"/>
+      <vege is-null="False" date="2012-08-31" time="00:00:00"/>
+      <megjegyzes is-null="False">Bufe nelkul</megjegyzes>
+    </record>
+    <record element-type="record" vonatszam="469">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">0000101</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="470">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">0000101</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="False">Pentek-vasarnap</megjegyzes>
+    </record>
+    <record element-type="record" vonatszam="163">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1000000</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="False">lassu</megjegyzes>
+    </record>
+    <record element-type="record" vonatszam="164">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1111111</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="2113">
+      <tipus is-null="False">Gyors</tipus>
+      <nap is-null="False">1110000</nap>
+      <kezd is-null="False" date="2012-11-01" time="00:00:00"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="False">uj jarat</megjegyzes>
+    </record>
+    <record element-type="record" vonatszam="4581">
+      <tipus is-null="False">szemely</tipus>
+      <nap is-null="False">1111111</nap>
+      <kezd is-null="True"/>
+      <vege is-null="False" date="2012-12-31" time="00:00:00"/>
+      <megjegyzes is-null="False">Mindenutt megall</megjegyzes>
+    </record>
+    <record element-type="record" vonatszam="6666">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1110011</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="9567">
+      <tipus is-null="False">szemely</tipus>
+      <nap is-null="False">1111111</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="1145">
+      <tipus is-null="False">Gyors</tipus>
+      <nap is-null="False">1111111</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="1146">
+      <tipus is-null="False">Gyors</tipus>
+      <nap is-null="False">1111111</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="2265">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1111100</nap>
+      <kezd is-null="True"/>
+      <vege is-null="True"/>
+      <megjegyzes is-null="True"/>
+    </record>
+    <record element-type="record" vonatszam="2266">
+      <tipus is-null="False">IC</tipus>
+      <nap is-null="False">1111100</nap>
+      <kezd is-null="False" date="1980-01-01" time="00:00:00"/>
+      <vege is-null="False" date="2100-12-31" time="00:00:00"/>
+      <megjegyzes is-null="False">Orokjarat</megjegyzes>
+    </record>
+  </jarat>
+  <megall element-type="recordset">
+    <record element-type="record" id="1">
+      <vonatszam is-null="False">213</vonatszam>
+      <allomas_id is-null="False">1</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">900</ind>
+    </record>
+    <record element-type="record" id="2">
+      <vonatszam is-null="False">213</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">915</erk>
+      <ind is-null="False">918</ind>
+    </record>
+    <record element-type="record" id="3">
+      <vonatszam is-null="False">213</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1025</erk>
+      <ind is-null="False">1028</ind>
+    </record>
+    <record element-type="record" id="4">
+      <vonatszam is-null="False">213</vonatszam>
+      <allomas_id is-null="False">16</allomas_id>
+      <erk is-null="False">1043</erk>
+      <ind is-null="False">1045</ind>
+    </record>
+    <record element-type="record" id="5">
+      <vonatszam is-null="False">213</vonatszam>
+      <allomas_id is-null="False">17</allomas_id>
+      <erk is-null="False">1145</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="6">
+      <vonatszam is-null="False">214</vonatszam>
+      <allomas_id is-null="False">17</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1400</ind>
+    </record>
+    <record element-type="record" id="7">
+      <vonatszam is-null="False">214</vonatszam>
+      <allomas_id is-null="False">16</allomas_id>
+      <erk is-null="False">1500</erk>
+      <ind is-null="False">1502</ind>
+    </record>
+    <record element-type="record" id="8">
+      <vonatszam is-null="False">214</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1535</erk>
+      <ind is-null="False">1540</ind>
+    </record>
+    <record element-type="record" id="9">
+      <vonatszam is-null="False">214</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1630</erk>
+      <ind is-null="False">1635</ind>
+    </record>
+    <record element-type="record" id="10">
+      <vonatszam is-null="False">214</vonatszam>
+      <allomas_id is-null="False">1</allomas_id>
+      <erk is-null="False">1650</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="11">
+      <vonatszam is-null="False">327</vonatszam>
+      <allomas_id is-null="False">1</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1115</ind>
+    </record>
+    <record element-type="record" id="12">
+      <vonatszam is-null="False">327</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1130</erk>
+      <ind is-null="False">1137</ind>
+    </record>
+    <record element-type="record" id="13">
+      <vonatszam is-null="False">327</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">1223</erk>
+      <ind is-null="False">1226</ind>
+    </record>
+    <record element-type="record" id="14">
+      <vonatszam is-null="False">327</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">1242</erk>
+      <ind is-null="False">1245</ind>
+    </record>
+    <record element-type="record" id="15">
+      <vonatszam is-null="False">327</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1306</erk>
+      <ind is-null="False">1310</ind>
+    </record>
+    <record element-type="record" id="16">
+      <vonatszam is-null="False">327</vonatszam>
+      <allomas_id is-null="False">20</allomas_id>
+      <erk is-null="False">1338</erk>
+      <ind is-null="False">1340</ind>
+    </record>
+    <record element-type="record" id="17">
+      <vonatszam is-null="False">327</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="False">1420</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="18">
+      <vonatszam is-null="False">328</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1520</ind>
+    </record>
+    <record element-type="record" id="19">
+      <vonatszam is-null="False">328</vonatszam>
+      <allomas_id is-null="False">20</allomas_id>
+      <erk is-null="False">1600</erk>
+      <ind is-null="False">1605</ind>
+    </record>
+    <record element-type="record" id="20">
+      <vonatszam is-null="False">328</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1632</erk>
+      <ind is-null="False">1635</ind>
+    </record>
+    <record element-type="record" id="21">
+      <vonatszam is-null="False">328</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">1655</erk>
+      <ind is-null="False">1658</ind>
+    </record>
+    <record element-type="record" id="22">
+      <vonatszam is-null="False">328</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">1731</erk>
+      <ind is-null="False">1734</ind>
+    </record>
+    <record element-type="record" id="23">
+      <vonatszam is-null="False">328</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1815</erk>
+      <ind is-null="False">1820</ind>
+    </record>
+    <record element-type="record" id="24">
+      <vonatszam is-null="False">328</vonatszam>
+      <allomas_id is-null="False">1</allomas_id>
+      <erk is-null="False">1835</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="25">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">2</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1120</ind>
+    </record>
+    <record element-type="record" id="26">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">25</allomas_id>
+      <erk is-null="False">1145</erk>
+      <ind is-null="False">1200</ind>
+    </record>
+    <record element-type="record" id="27">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">26</allomas_id>
+      <erk is-null="False">1223</erk>
+      <ind is-null="False">1230</ind>
+    </record>
+    <record element-type="record" id="28">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">27</allomas_id>
+      <erk is-null="False">1250</erk>
+      <ind is-null="False">1300</ind>
+    </record>
+    <record element-type="record" id="29">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">28</allomas_id>
+      <erk is-null="False">1320</erk>
+      <ind is-null="False">1335</ind>
+    </record>
+    <record element-type="record" id="30">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">29</allomas_id>
+      <erk is-null="False">1400</erk>
+      <ind is-null="False">1410</ind>
+    </record>
+    <record element-type="record" id="31">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">30</allomas_id>
+      <erk is-null="False">1440</erk>
+      <ind is-null="False">1443</ind>
+    </record>
+    <record element-type="record" id="32">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">31</allomas_id>
+      <erk is-null="False">1507</erk>
+      <ind is-null="False">1510</ind>
+    </record>
+    <record element-type="record" id="33">
+      <vonatszam is-null="False">9567</vonatszam>
+      <allomas_id is-null="False">32</allomas_id>
+      <erk is-null="False">1535</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="34">
+      <vonatszam is-null="False">469</vonatszam>
+      <allomas_id is-null="False">1</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1115</ind>
+    </record>
+    <record element-type="record" id="35">
+      <vonatszam is-null="False">469</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1130</erk>
+      <ind is-null="False">1137</ind>
+    </record>
+    <record element-type="record" id="36">
+      <vonatszam is-null="False">469</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">1223</erk>
+      <ind is-null="False">1226</ind>
+    </record>
+    <record element-type="record" id="37">
+      <vonatszam is-null="False">469</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">1242</erk>
+      <ind is-null="False">1245</ind>
+    </record>
+    <record element-type="record" id="38">
+      <vonatszam is-null="False">469</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1306</erk>
+      <ind is-null="False">1310</ind>
+    </record>
+    <record element-type="record" id="39">
+      <vonatszam is-null="False">469</vonatszam>
+      <allomas_id is-null="False">20</allomas_id>
+      <erk is-null="False">1338</erk>
+      <ind is-null="False">1340</ind>
+    </record>
+    <record element-type="record" id="40">
+      <vonatszam is-null="False">469</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="False">1420</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="41">
+      <vonatszam is-null="False">470</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1520</ind>
+    </record>
+    <record element-type="record" id="42">
+      <vonatszam is-null="False">470</vonatszam>
+      <allomas_id is-null="False">20</allomas_id>
+      <erk is-null="False">1600</erk>
+      <ind is-null="False">1605</ind>
+    </record>
+    <record element-type="record" id="43">
+      <vonatszam is-null="False">470</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1632</erk>
+      <ind is-null="False">1635</ind>
+    </record>
+    <record element-type="record" id="44">
+      <vonatszam is-null="False">470</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">1655</erk>
+      <ind is-null="False">1658</ind>
+    </record>
+    <record element-type="record" id="45">
+      <vonatszam is-null="False">470</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">1731</erk>
+      <ind is-null="False">1734</ind>
+    </record>
+    <record element-type="record" id="46">
+      <vonatszam is-null="False">470</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1815</erk>
+      <ind is-null="False">1820</ind>
+    </record>
+    <record element-type="record" id="47">
+      <vonatszam is-null="False">470</vonatszam>
+      <allomas_id is-null="False">1</allomas_id>
+      <erk is-null="False">1835</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="48">
+      <vonatszam is-null="False">163</vonatszam>
+      <allomas_id is-null="False">3</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1225</ind>
+    </record>
+    <record element-type="record" id="49">
+      <vonatszam is-null="False">163</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1230</erk>
+      <ind is-null="False">1237</ind>
+    </record>
+    <record element-type="record" id="50">
+      <vonatszam is-null="False">163</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">1323</erk>
+      <ind is-null="False">1326</ind>
+    </record>
+    <record element-type="record" id="51">
+      <vonatszam is-null="False">163</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">1342</erk>
+      <ind is-null="False">1345</ind>
+    </record>
+    <record element-type="record" id="52">
+      <vonatszam is-null="False">163</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1406</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="53">
+      <vonatszam is-null="False">164</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1735</ind>
+    </record>
+    <record element-type="record" id="54">
+      <vonatszam is-null="False">164</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">1755</erk>
+      <ind is-null="False">1758</ind>
+    </record>
+    <record element-type="record" id="55">
+      <vonatszam is-null="False">164</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">1831</erk>
+      <ind is-null="False">1834</ind>
+    </record>
+    <record element-type="record" id="56">
+      <vonatszam is-null="False">164</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1915</erk>
+      <ind is-null="False">1920</ind>
+    </record>
+    <record element-type="record" id="57">
+      <vonatszam is-null="False">164</vonatszam>
+      <allomas_id is-null="False">3</allomas_id>
+      <erk is-null="False">1925</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="58">
+      <vonatszam is-null="False">553</vonatszam>
+      <allomas_id is-null="False">3</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">725</ind>
+    </record>
+    <record element-type="record" id="59">
+      <vonatszam is-null="False">553</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">730</erk>
+      <ind is-null="False">737</ind>
+    </record>
+    <record element-type="record" id="60">
+      <vonatszam is-null="False">553</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">823</erk>
+      <ind is-null="False">826</ind>
+    </record>
+    <record element-type="record" id="61">
+      <vonatszam is-null="False">553</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">842</erk>
+      <ind is-null="False">845</ind>
+    </record>
+    <record element-type="record" id="62">
+      <vonatszam is-null="False">553</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">906</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="63">
+      <vonatszam is-null="False">554</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1235</ind>
+    </record>
+    <record element-type="record" id="64">
+      <vonatszam is-null="False">554</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">1255</erk>
+      <ind is-null="False">1258</ind>
+    </record>
+    <record element-type="record" id="65">
+      <vonatszam is-null="False">554</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">1331</erk>
+      <ind is-null="False">1334</ind>
+    </record>
+    <record element-type="record" id="66">
+      <vonatszam is-null="False">554</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1415</erk>
+      <ind is-null="False">1420</ind>
+    </record>
+    <record element-type="record" id="67">
+      <vonatszam is-null="False">554</vonatszam>
+      <allomas_id is-null="False">3</allomas_id>
+      <erk is-null="False">1425</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="68">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">1</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1315</ind>
+    </record>
+    <record element-type="record" id="69">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">5</allomas_id>
+      <erk is-null="False">1320</erk>
+      <ind is-null="False">1325</ind>
+    </record>
+    <record element-type="record" id="70">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">4</allomas_id>
+      <erk is-null="False">1335</erk>
+      <ind is-null="False">1345</ind>
+    </record>
+    <record element-type="record" id="71">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">6</allomas_id>
+      <erk is-null="False">1400</erk>
+      <ind is-null="False">1403</ind>
+    </record>
+    <record element-type="record" id="72">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">7</allomas_id>
+      <erk is-null="False">1418</erk>
+      <ind is-null="False">1420</ind>
+    </record>
+    <record element-type="record" id="73">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">8</allomas_id>
+      <erk is-null="False">1432</erk>
+      <ind is-null="False">1434</ind>
+    </record>
+    <record element-type="record" id="74">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">9</allomas_id>
+      <erk is-null="False">1449</erk>
+      <ind is-null="False">1457</ind>
+    </record>
+    <record element-type="record" id="75">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">10</allomas_id>
+      <erk is-null="False">1510</erk>
+      <ind is-null="False">1514</ind>
+    </record>
+    <record element-type="record" id="76">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">11</allomas_id>
+      <erk is-null="False">1522</erk>
+      <ind is-null="False">1527</ind>
+    </record>
+    <record element-type="record" id="77">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">12</allomas_id>
+      <erk is-null="False">1540</erk>
+      <ind is-null="False">1542</ind>
+    </record>
+    <record element-type="record" id="78">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">13</allomas_id>
+      <erk is-null="False">1557</erk>
+      <ind is-null="False">1600</ind>
+    </record>
+    <record element-type="record" id="79">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">14</allomas_id>
+      <erk is-null="False">1608</erk>
+      <ind is-null="False">1610</ind>
+    </record>
+    <record element-type="record" id="80">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1625</erk>
+      <ind is-null="False">1640</ind>
+    </record>
+    <record element-type="record" id="81">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">18</allomas_id>
+      <erk is-null="False">1703</erk>
+      <ind is-null="False">1705</ind>
+    </record>
+    <record element-type="record" id="82">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">19</allomas_id>
+      <erk is-null="False">1713</erk>
+      <ind is-null="False">1716</ind>
+    </record>
+    <record element-type="record" id="83">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">20</allomas_id>
+      <erk is-null="False">1732</erk>
+      <ind is-null="False">1735</ind>
+    </record>
+    <record element-type="record" id="84">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">21</allomas_id>
+      <erk is-null="False">1755</erk>
+      <ind is-null="False">1803</ind>
+    </record>
+    <record element-type="record" id="85">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">22</allomas_id>
+      <erk is-null="False">1814</erk>
+      <ind is-null="False">1816</ind>
+    </record>
+    <record element-type="record" id="86">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">23</allomas_id>
+      <erk is-null="False">1830</erk>
+      <ind is-null="False">1832</ind>
+    </record>
+    <record element-type="record" id="87">
+      <vonatszam is-null="False">4581</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="False">1847</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="88">
+      <vonatszam is-null="False">2113</vonatszam>
+      <allomas_id is-null="False">2</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1920</ind>
+    </record>
+    <record element-type="record" id="89">
+      <vonatszam is-null="False">2113</vonatszam>
+      <allomas_id is-null="False">26</allomas_id>
+      <erk is-null="False">1923</erk>
+      <ind is-null="False">1930</ind>
+    </record>
+    <record element-type="record" id="90">
+      <vonatszam is-null="False">2113</vonatszam>
+      <allomas_id is-null="False">28</allomas_id>
+      <erk is-null="False">2020</erk>
+      <ind is-null="False">2035</ind>
+    </record>
+    <record element-type="record" id="91">
+      <vonatszam is-null="False">2113</vonatszam>
+      <allomas_id is-null="False">29</allomas_id>
+      <erk is-null="False">2100</erk>
+      <ind is-null="False">2110</ind>
+    </record>
+    <record element-type="record" id="92">
+      <vonatszam is-null="False">2113</vonatszam>
+      <allomas_id is-null="False">31</allomas_id>
+      <erk is-null="False">2145</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="93">
+      <vonatszam is-null="False">6666</vonatszam>
+      <allomas_id is-null="False">1</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">2010</ind>
+    </record>
+    <record element-type="record" id="94">
+      <vonatszam is-null="False">6666</vonatszam>
+      <allomas_id is-null="False">33</allomas_id>
+      <erk is-null="False">2245</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="95">
+      <vonatszam is-null="False">1145</vonatszam>
+      <allomas_id is-null="False">3</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">920</ind>
+    </record>
+    <record element-type="record" id="96">
+      <vonatszam is-null="False">1145</vonatszam>
+      <allomas_id is-null="False">37</allomas_id>
+      <erk is-null="False">1010</erk>
+      <ind is-null="False">1015</ind>
+    </record>
+    <record element-type="record" id="97">
+      <vonatszam is-null="False">1145</vonatszam>
+      <allomas_id is-null="False">38</allomas_id>
+      <erk is-null="False">1115</erk>
+      <ind is-null="False">1120</ind>
+    </record>
+    <record element-type="record" id="98">
+      <vonatszam is-null="False">1145</vonatszam>
+      <allomas_id is-null="False">39</allomas_id>
+      <erk is-null="False">1215</erk>
+      <ind is-null="False">1225</ind>
+    </record>
+    <record element-type="record" id="99">
+      <vonatszam is-null="False">1145</vonatszam>
+      <allomas_id is-null="False">40</allomas_id>
+      <erk is-null="False">1358</erk>
+      <ind is-null="False">1403</ind>
+    </record>
+    <record element-type="record" id="100">
+      <vonatszam is-null="False">1145</vonatszam>
+      <allomas_id is-null="False">41</allomas_id>
+      <erk is-null="False">1445</erk>
+      <ind is-null="False">1450</ind>
+    </record>
+    <record element-type="record" id="101">
+      <vonatszam is-null="False">1145</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="False">1530</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="102">
+      <vonatszam is-null="False">1146</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1550</ind>
+    </record>
+    <record element-type="record" id="103">
+      <vonatszam is-null="False">1146</vonatszam>
+      <allomas_id is-null="False">41</allomas_id>
+      <erk is-null="False">1630</erk>
+      <ind is-null="False">1635</ind>
+    </record>
+    <record element-type="record" id="104">
+      <vonatszam is-null="False">1146</vonatszam>
+      <allomas_id is-null="False">40</allomas_id>
+      <erk is-null="False">1715</erk>
+      <ind is-null="False">1720</ind>
+    </record>
+    <record element-type="record" id="105">
+      <vonatszam is-null="False">1146</vonatszam>
+      <allomas_id is-null="False">39</allomas_id>
+      <erk is-null="False">1750</erk>
+      <ind is-null="False">1800</ind>
+    </record>
+    <record element-type="record" id="106">
+      <vonatszam is-null="False">1146</vonatszam>
+      <allomas_id is-null="False">38</allomas_id>
+      <erk is-null="False">1900</erk>
+      <ind is-null="False">1905</ind>
+    </record>
+    <record element-type="record" id="107">
+      <vonatszam is-null="False">1146</vonatszam>
+      <allomas_id is-null="False">37</allomas_id>
+      <erk is-null="False">1955</erk>
+      <ind is-null="False">2000</ind>
+    </record>
+    <record element-type="record" id="108">
+      <vonatszam is-null="False">1146</vonatszam>
+      <allomas_id is-null="False">3</allomas_id>
+      <erk is-null="False">2100</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="109">
+      <vonatszam is-null="False">2265</vonatszam>
+      <allomas_id is-null="False">3</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">930</ind>
+    </record>
+    <record element-type="record" id="110">
+      <vonatszam is-null="False">2265</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1030</erk>
+      <ind is-null="False">1036</ind>
+    </record>
+    <record element-type="record" id="111">
+      <vonatszam is-null="False">2265</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="False">1150</erk>
+      <ind is-null="False">1155</ind>
+    </record>
+    <record element-type="record" id="112">
+      <vonatszam is-null="False">2265</vonatszam>
+      <allomas_id is-null="False">41</allomas_id>
+      <erk is-null="False">1235</erk>
+      <ind is-null="True"/>
+    </record>
+    <record element-type="record" id="113">
+      <vonatszam is-null="False">2266</vonatszam>
+      <allomas_id is-null="False">41</allomas_id>
+      <erk is-null="True"/>
+      <ind is-null="False">1300</ind>
+    </record>
+    <record element-type="record" id="114">
+      <vonatszam is-null="False">2266</vonatszam>
+      <allomas_id is-null="False">24</allomas_id>
+      <erk is-null="False">1340</erk>
+      <ind is-null="False">1345</ind>
+    </record>
+    <record element-type="record" id="115">
+      <vonatszam is-null="False">2266</vonatszam>
+      <allomas_id is-null="False">15</allomas_id>
+      <erk is-null="False">1500</erk>
+      <ind is-null="False">1505</ind>
+    </record>
+    <record element-type="record" id="116">
+      <vonatszam is-null="False">2266</vonatszam>
+      <allomas_id is-null="False">3</allomas_id>
+      <erk is-null="False">1605</erk>
+      <ind is-null="True"/>
+    </record>
+  </megall>
+</vasut>
