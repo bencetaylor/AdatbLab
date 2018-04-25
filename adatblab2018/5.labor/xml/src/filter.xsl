@@ -7,20 +7,6 @@
 
   <xsl:output method="xml" indent="yes" />
 
-  <!-- <xsl:template match="/ship">
-    <xsl:copy>
-      
-      
-      <xsl:apply-templates select="ships" />
-    </xsl:copy>
-  </xsl:template>
-
-  <xsl:template match="ships">
-    <xsl:copy>
-      
-    </xsl:copy>
-  </xsl:template> -->
-  
   <xsl:template match="/vasut">
     <xsl:copy>
       <xsl:attribute name="element-type" >

@@ -18,19 +18,7 @@
       <body>
         <h1>Allomasok</h1>
         <!-- here comes the list -->
-        <table>
-          <thead>
-            <tr>
-              <th>Név</th>
-              <th>Város</th>
-              <th>Átlagutas</th>
-              <th>Sztrájkutas</th>
-            </tr>
-          </thead>
-          <tbody>
-            <xsl:apply-templates/>
-          </tbody>
-        </table>
+        <xsl:call-template name="my_template" />
       </body>
     </html>
   </xsl:template>

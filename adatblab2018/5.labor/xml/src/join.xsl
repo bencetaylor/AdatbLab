@@ -28,8 +28,8 @@
         <xsl:value-of select="atlagutas" />
       </atlagutas>
       <vonatok>
-        <xsl:variable name="my_id" select="@id" />
-        <xsl:apply-templates select="/vasut/megall[@element-type='recordset']/record[allomas_id=$my_id]"/>
+        <xsl:variable name="all_id" select="@id" />
+        <xsl:apply-templates select="/vasut/megall[@element-type='recordset']/record[allomas_id=$all_id]"/>
       </vonatok>
     </allomas>
   </xsl:template>
@@ -40,12 +40,24 @@
       <xsl:attribute name="vonatszam">
         <xsl:value-of select="vonatszam" />
       </xsl:attribute>
-      <xsl:attribute name="erk">
-        <xsl:value-of select="erk" />
-      </xsl:attribute>
-      <xsl:attribute name="ind">
-        <xsl:value-of select="ind" />
-      </xsl:attribute>
+      <xsl:apply-templates select="erk" />
+      <xsl:apply-templates select="ind" />
     </vonat>
+  </xsl:template>
+  
+  <xsl:template match="record/erk[@is-null='True']" priority="0.8"></xsl:template>
+
+  <xsl:template match="record/erk" priority="0.4">
+    <xsl:attribute name="erk">
+      <xsl:value-of select="." />
+    </xsl:attribute>
+  </xsl:template>
+  
+  <xsl:template match="record/ind[@is-null='True']" priority="0.8"></xsl:template>
+
+  <xsl:template match="record/ind" priority="0.4">
+    <xsl:attribute name="ind">
+      <xsl:value-of select="." />
+    </xsl:attribute>
   </xsl:template>
 </xsl:stylesheet>

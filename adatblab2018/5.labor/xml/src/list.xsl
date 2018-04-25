@@ -11,15 +11,19 @@
     <xsl:apply-templates select="vasut/allomas" />
   </xsl:template>
   
-  <xsl:template match="allomas[@element-type='recordset']">
+  <xsl:template name="my_template" match="allomas[@element-type='recordset']">
     <table>
+      <thead>
         <tr>
           <th>Név</th>
           <th>Város</th>
-          <th>Átlagutas</th>
-          <th>Sztrájkutas</th>
+          <th>Átlagos utasszám</th>
+          <th>Kapacitás sztrájk esetén</th>
         </tr>
+      </thead>
+      <tbody>
         <xsl:apply-templates />
+      </tbody>
     </table>
   </xsl:template>
   
